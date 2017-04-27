@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+	<div class="page">
+		
+		<header class="header">
+			<div class="header__content">
+				<img src="images/logo.png" alt="">
+			</div>
+		</header>
+
+		<main class="content">
+			<div class="content__table">
+				<div class="content__col content__col_main">
+					<div class="form">
+						<div class="form__order">Трансфер Ларнака аэропорт – Айя-напа</div>
+						<div class="form__section">
+							<div class="form__title">Информация о маршруте</div>
+							<div class="form__table">
+								<div class="form__row">
+									<div class="form__col form__col_label">Номер авиарейса</div>
+									<div class="form__col">
+										<div class="form__group">
+											<div class="form__field">
+												<input type="text" class="form__input" placeholder="Например, AC5697">
+											</div>
+										</div>
+										<div class="form__msg">Введите номер рейса из вашего билета</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col form__col_label">Дата и время прилета</div>
+									<div class="form__col">
+										<div class="form__group form__group_mid">
+											<div class="form__field">
+												<span class="form__trigger"></span>
+												<input type="text" class="form__input" placeholder="дд.мм.гг">
+											</div>
+										</div>
+										<div class="form__group form__group_small">
+											<div class="form__field">
+												<span class="form__trigger"></span>
+												<input type="text" class="form__input" placeholder="чч : мм">
+											</div>
+										</div>
+										<div class="form__msg">Укажите время прилета вашего рейса, как в билете.</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col form__col_label">Число пассажиров</div>
+									<div class="form__col">
+										<div class="form__group">
+											<div class="form__field">
+												<input type="text" class="form__input" placeholder="Например, AC5697">
+											</div>
+										</div>
+										<div class="form__msg">Количество пассажиров, включая детей</div>
+										<label class="form__label">
+											<input type="checkbox">
+											<span class="form__label-text">детское кресло</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col form__col_label">Место назначения</div>
+									<div class="form__col">
+										<div class="form__group">
+											<div class="form__field">
+												<input type="text" class="form__input" placeholder="Адрес, улица или отель...">
+											</div>
+										</div>
+										<div class="form__msg">Достаточно указать название отеля или район города</div>
+										<label class="form__label">
+											<input type="checkbox">
+											<span class="form__label-text">добавить обратный трансфер</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__section">
+							<div class="form__title">Контакты</div>
+							<div class="form__table">
+								<div class="form__row">
+									<div class="form__col form__col_label">Имя и фамилия</div>
+									<div class="form__col">
+										<div class="form__group">
+											<div class="form__field">
+												<input type="text" class="form__input" placeholder="Например, Иван Алексеев">
+											</div>
+										</div>
+										<div class="form__msg">Укажите имя и фамилию, чтобы мы могли вас встретить</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col form__col_label">Электронная почта</div>
+									<div class="form__col">
+										<div class="form__group">
+											<div class="form__field">
+												<input type="text" class="form__input" placeholder="yourname@post.com">
+											</div>
+										</div>
+										<div class="form__msg">На этот адрес мы пришлем вам подтверждение брони</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col form__col_label">Телефон</div>
+									<div class="form__col">
+										<div class="form__group">
+											<div class="form__field">
+												<i class="form__flat"></i>
+												<input type="text" class="form__input" placeholder="+7 912 352-42-01">
+											</div>
+										</div>
+										<div class="form__msg">На этот адрес мы пришлем вам подтверждение брони</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col form__col_label">Примечания</div>
+									<div class="form__col">
+										<textarea class="form__textarea" placeholder="Укажите любую дополнительную информацию о трансфере....."></textarea>
+										<!-- <a href="#" class="form__btn">Продолжить</a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__section">
+							<div class="form__title">Порядок оплаты</div>
+							<label class="form__label">
+								<input type="radio" name="1">
+								<span class="form__label-text">Предоплата, остаток наличными водителю</span>
+							</label>
+							<label class="form__label">
+								<input type="radio" name="1">
+								<span class="form__label-text">Полная оплата на сайте</span>
+							</label>
+							<div class="form__price-box active">
+								<div class="form__price-box-label">К оплате сейчас</div>
+								<div class="form__price-box-num">3 154 P – 44 €</div>
+							</div>
+							<div class="form__price-box">
+								<div class="form__price-box-label">Наличными водителю</div>
+								<div class="form__price-box-num">640 P – 10 €</div>
+							</div>
+						</div>
+						<div class="form__section">
+							<div class="form__title">Способ оплаты</div>
+							<label class="form__label">
+								<input type="radio" name="2">
+								<img src="images/visamc.png" alt="" class="form__label-img">
+							</label>
+						</div>
+						<div class="form__bot-row">
+							<a href="javascript:void(0)" class="form__pay" onClick="$(this).hide(); $('.form__frame').fadeIn('fast');">
+								<span class="form__pay-text">Оплатить</span> <span class="form__pay-module">+</span>
+							</a>
+						</div>
+						<div class="form__frame" style="display: none;">
+							<iframe src=" https://wpay.uniteller.ru/pay?...e=ru" width="100%" height="600px" name="pay_iframe" id="pay_iframe" align="middle" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" allowtransparency="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="content__col content__col_right">
+					<div class="ticket">
+						<div class="ticket__item">
+							<div class="ticket__title">Трансфер</div>
+							<div class="ticket__subtitle">Общая информация</div>
+							<div class="ticket__text ticket__text_min">Место и время встречи</div>
+							<div class="ticket__text">Ларнака Аэропорт (LCA)</div>
+						</div>
+						<div class="ticket__item">
+							<div class="ticket__subtitle">Тип</div>
+							<div class="ticket__text">Прямой трансфер</div>
+							<div class="ticket__text ticket__text_min">до 4 пассажиров, 3 багажа</div>
+						</div>
+						<div class="ticket__item">
+							<div class="ticket__subtitle">Стоимость</div>
+							<div class="ticket__text">3 154 Р — 44 €</div>
+							<div class="ticket__text ticket__text_min">Прямой трансфер</div>
+						</div>
+						<div class="ticket__item ticket__item_bot">
+							<div class="ticket__row clearifx">
+								<div class="ticket__subtitle">Итого</div>
+								<div class="ticket__price ticket__subtitle">3 154 Р — 44 €</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<div style="height: 40px"></div>
+
+		<!-- //= template/footer.html -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</div>
+</body>
+</html>

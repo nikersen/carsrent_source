@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carsrent</title>
+
+	//= template/styles.html
+
+</head>
+<body>
+	<div class="page">
+		<div class="header-container">
+			//= template/header.html
+
+			<div class="content">
+				<div class="header__row">
+					<h1 class="header__title">Такси в любую точку мира!</h1>
+					<div class="header__contact">
+						<div class="header__contact-number">8 <span>[</span>495<span>]</span> 777-23-77</div>
+						<div class="header__contact-text">клиентская поддержка</div>
+					</div>
+				</div>
+				<div class="form-search  form-search--header">
+					<div class="form-search__col  form-search__col--from">
+						<label for="from" class="form-search__label">Откуда вас забрать</label>
+						<div class="form__group  form__group--100">
+							<div class="form__field  js-modal-on">
+								<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+							</div>
+							<div class="form-modal  form-modal--time  js-modal">
+								<div class="form-modal__body">
+									<div class="form-modal__suggest  form-modal__suggest--airport">
+										<div class="form-modal__suggest-item js-form-suggest">
+											<div class="form-modal__suggest-text">Домодедово</div>
+											<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+										</div>
+									</div>
+									<div class="form-modal__suggest  form-modal__suggest--hotel">
+										<div class="form-modal__suggest-item js-form-suggest">
+											<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+											<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+										</div>
+									</div>
+									<div class="form-modal__suggest  form-modal__suggest--address">
+										<div class="form-modal__suggest-item js-form-suggest">
+											<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+											<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-search__col  form-search__col--separator">
+						<i class="material-icons">chevron_right</i>
+					</div>
+					<div class="form-search__col  form-search__col--to">
+						<label for="to" class="form-search__label">Куда доставить</label>
+						<div class="form__group  form__group--100">
+							<div class="form__field  js-modal-on">
+								<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+							</div>
+							<div class="form-modal  form-modal--time  js-modal">
+								<div class="form-modal__body">
+									<div class="form-modal__suggest  form-modal__suggest--airport">
+										<div class="form-modal__suggest-item js-form-suggest">
+											<div class="form-modal__suggest-text">Домодедово</div>
+											<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+										</div>
+									</div>
+									<div class="form-modal__suggest  form-modal__suggest--hotel">
+										<div class="form-modal__suggest-item js-form-suggest">
+											<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+											<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+										</div>
+									</div>
+									<div class="form-modal__suggest  form-modal__suggest--address">
+										<div class="form-modal__suggest-item js-form-suggest">
+											<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+											<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-search__col  form-search__col--btn">
+						<button class="block-btn mdl-js-button mdl-js-ripple-effect">
+							<span class="block-btn__text">Найти автомобиль</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="content">
+			<div class="block-introduction">
+				<div class="block-introduction__title">Как воспользоваться услугой</div>
+				<div class="block-introduction__row">
+					<div class="block-introduction__item">
+						<div class="block-introduction__img  block-introduction__img--img1"></div>
+						<div class="block-introduction__text">Укажите нужный маршрут трансфера</div>
+					</div>
+					<div class="block-introduction__item">
+						<div class="block-introduction__img  block-introduction__img--img2"></div>
+						<div class="block-introduction__text">Оформите заявку на трансфер</div>
+					</div>
+					<div class="block-introduction__item">
+						<div class="block-introduction__img  block-introduction__img--img3"></div>
+						<div class="block-introduction__text">Найдите на месте встречи водителя с табличкой</div>
+					</div>
+					<div class="block-introduction__item">
+						<div class="block-introduction__img  block-introduction__img--img4"></div>
+						<div class="block-introduction__text">Вуаля — Вы на месте! Быстро и недорого.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tile">
+				<div class="tile__item  tile__item--size-4" style="background-image: url(http://cdn.sandals.com/sandals/v11/site-elements/home/resortsSlider/resort-slu.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-2" style="background-image: url(http://www.hiltonsedonaresort.com/wp-content/uploads/2016/04/sedona_masthead_1680x700-sedona-golf-resort-768x450.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+					<a href="#21" class="tile__about">О направлении</a>
+				</div>
+				<div class="tile__item  tile__item--size-2" style="background-image: url(http://cdn.sandals.com/sandals/v11/site-elements/home/resortsSlider/resort-slu.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<a href="#" class="tile__btn  block-btn  mdl-js-button  mdl-js-ripple-effect">Найти предложения</a>
+						</div>
+					</a>
+					<a href="#" class="tile__about">О направлении</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(http://cdn.sandals.com/sandals/v11/site-elements/home/resortsSlider/resort-slu.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-2" style="background-image: url(http://www.hiltonsedonaresort.com/wp-content/uploads/2016/04/sedona_masthead_1680x700-sedona-golf-resort-768x450.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+					<a href="#" class="tile__about">О направлении</a>
+				</div>
+			</div>
+
+			<div class="tile">
+				<div class="tile__item  tile__item--size-4" style="background-image: url(http://cdn.sandals.com/sandals/v11/site-elements/home/resortsSlider/resort-slu.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-2" style="background-image: url(http://www.hiltonsedonaresort.com/wp-content/uploads/2016/04/sedona_masthead_1680x700-sedona-golf-resort-768x450.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+					<a href="#" class="tile__about">О направлении</a>
+				</div>
+				<div class="tile__item  tile__item--size-2" style="background-image: url(http://cdn.sandals.com/sandals/v11/site-elements/home/resortsSlider/resort-slu.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<span class="tile__btn  block-btn  mdl-js-button  mdl-js-ripple-effect">Найти предложения</span>
+						</div>
+					</a>
+					<a href="#" class="tile__about">О направлении</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(https://az760333.vo.msecnd.net/~/media/property/sunriverresort/footer/sunriver-resort_recreation_rafting-crpd840x500.jpg?ts=98167c82-fe8c-4848-8c87-5f11538e0183);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-4" style="background-image: url(http://cdn.sandals.com/sandals/v11/site-elements/home/resortsSlider/resort-slu.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+				</div>
+				<div class="tile__item  tile__item--size-2" style="background-image: url(http://www.hiltonsedonaresort.com/wp-content/uploads/2016/04/sedona_masthead_1680x700-sedona-golf-resort-768x450.jpg);">
+					<div class="tile__shadow"></div>
+					<a href="#" class="tile__clickzone">
+						<div class="tile__content">
+							<div class="tile__title">Хошимин аэропорт – Муйне</div>
+							<div class="tile__price">33.00 <i class="fa fa-euro"></i></div>
+						</div>
+					</a>
+					<a href="#" class="tile__about">О направлении</a>
+				</div>
+			</div>
+
+			<div class="index-info">
+				<a href="#!" class="index-info__title  js-popup-overflow-on"><span>Закажите всё, что угодно, в один клик!</span></a>
+				<div class="index-info__desc">Просто заполните короткую заявку, и мы вам перезвоним</div>
+				<div class="index-info__text">
+					<p>Компания Carsrent предоставляет индивидуальные трансферы на такси, минибасах для путешественников.</p>
+					<p>Мы обеспечиваем надежность и бесперебойность работы сервиса.</p>
+					<p>Вы просто полагаетесь на наш опыт и отдыхаете, а остальное мы делаем для вас сами.</p>
+				</div>
+				<a href="#" class="index-info__btn mdl-js-button mdl-js-ripple-effect">Отзывы о нас</a>
+			</div>
+		</main>
+		
+		<div style="height: 40px;"></div>
+
+		<div class="information">
+			<div class="content">
+				<div class="information__text">
+					<h1>О CarsRent</h1>
+					<p>CarsRent — это международная система поиска и бронирования автомобильных трансферов. С 2010 года мы выполняем автомобильные трансферы в разных странах мира. За это время мы перевезли очень много туристов и накопили серьезный опыт в перевозках.</p>
+					<h2>О трансферах</h2>
+					<p>Отправляясь в путешествие, помимо авиабилетов и отеля нужно также позаботиться о том, как добраться из аэропорта до отеля в незнакомой стране. Взять такси на месте или найти автобус? Возможно, но велик риск серьезно переплатить, не найти нужный маршрут или вообще остаться без трансфера.</p>
+					<p>Все намного проще, если вы заказываете трансфер заранее. CarsRent отлично решает этот вопрос. Выберите маршрут, класс автомобиля, укажите контакты и внесите предоплату. В указанное время вас встретит водитель и с комфортом довезет до места назначения.</p>
+					<p>Индивидуальное такси имеет также ряд важных преимуществ перед групповым трансфером в составе тура.</p>
+					<p>Вам не придется часами ждать других туристов в аэропорту. Не придется ездить в автобусе, пока он не развезет всех туристов по отелям. Зачастую это занимает несколько часов утомительного ожидания. Заказывая индивидуальный трансфер, вы сразу отправляетесь в отель отдыхать после дороги.</p>
+					<p>Индивидуальный трансфер, очевидно, намного комфортнее автобусного. Особенно если вы едете с детьми или большой компанией. При этом он не будет намного дороже, поскольку оплачивается за машину независимо от числа пассажиров.</p>
+					<h2>Наши автомобили</h2>
+					<p>В нашем парке 12 классов автомобилей: от бюджетного эконома до микроавтобусов на 19 пассажиров.</p>
+					<p>Если вы едете с детьми, можете заказать детское кресло нужной группы, водитель обязательно установит его перед поездкой.</p>
+					<h2>Добро пожаловать!</h2>
+					<p>Выбирайте и бронируйте трансфер, обращайтесь, если возникают вопросы, будем рады найти для вас такси. Мы позаботимся о том, чтобы ваш отдых начинался с положительных эмоций.</p>
+				</div>
+			</div>
+		</div>
+
+		//= template/footer.html
+
+		<div class="popup-overflow  popup-overflow--dark  js-popup-overflow">
+			
+			<div class="popup  popup-save-page  popup-save-page--auto-height">
+				<div class="popup-save-page__head"></div>
+				<div class="popup-save-page__body">
+					<div class="popup-save-page__title">Заказ в один клик</div>
+					<div class="popup-save-page__text">Оставьте свой номер телефона <br> и мы сделаем бронь по звонку</div>
+					<div class="popup-save-page__icon"></div>
+					<div class="form__field">
+						<input id="from" type="text" class="form__input  js-form-input" placeholder="Имя">
+					</div>
+					<br>
+					<div class="form__field">
+						<input id="from" type="text" class="form__input  js-form-input  js-auth-phone" placeholder="Телефон">
+					</div>
+					<div class="popup-save-page__row">
+						<button class="popup-save-page__btn  js-popup-overflow-close">Нет, закрыть это окно</button>
+						<input type="submit" class="popup-save-page__btn  popup-save-page__btn--colored" value="Да, позвоните мне">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		//= template/scripts.html
+
+	</div>
+</body>
+</html>

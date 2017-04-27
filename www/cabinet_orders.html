@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/material.css">
+
+</head>
+<body>
+	<div class="page  page--not-responsive">
+
+		<header class="header">
+			<a href="index.html" class="header__logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="header__content">
+				<div class="header-responsive-btn">
+					<span class="header-responsive-btn__text">Меню</span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+				</div>
+				<div class="header-responsive-menu">
+					<nav class="header-nav">
+						<ul>
+							<li class="header-nav__item">
+								<a href="order_checking.html" class="header-nav__link active">Заказы</a> 
+								<span class="header-nav__badge">1350</span>
+							</li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Маршруты и цены</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Данные поставщика</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Как этим пользоваться</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			
+			<div class="manage">
+				<table class="manage-table">
+				    <thead>
+				        <tr>
+				            <th><a href="#" class="manage-table__sort">Номер заказа</a></th>
+				            <th><a href="#" class="manage-table__sort">Откуда</a></th>
+				            <th><a href="#" class="manage-table__sort">Куда</a></th>
+				            <th><a href="#" class="manage-table__sort">Дата заказа</a></th>
+				            <th><a href="#" class="manage-table__sort">Стоимость</a></th>
+				            <th class="manage-table__col--status"><a href="#" class="manage-table__sort">Статус</a></th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr class="js-popup-overflow-on">
+				            <td class="">1</td>
+				            <td>Хургада Аэропорт</td>
+				            <td>Hurgada Oasis Resort Apartment Hurgada Oasis Resort Apartment</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">1 окт 2017 вс</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">3 500 Р</div></td>
+				            <td class="manage-table__col--status"><b>Новый</b></td>
+				        </tr>
+				        <tr class="js-popup-overflow-on">
+				            <td class="">2</td>
+				            <td>Хургада Аэропорт</td>
+				            <td>Hurgada Oasis Resort Apartment</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">15 окт 2017 вс</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">35 500 Р</div></td>
+				            <td class="manage-table__col--status">Выполнен</td>
+				        </tr>
+				        <tr class="js-popup-overflow-on manage-table__row--canceled">
+				            <td class="">3</td>
+				            <td>Хургада Аэропорт</td>
+				            <td>Hurgada Oasis Resort Apartment</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">1 окт 2017 вс</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">3 500 Р</div></td>
+				            <td class="manage-table__col--status">Отменен</td>
+				        </tr>
+				        <tr class="js-popup-overflow-on manage-table__row--completed">
+				            <td class="">4</td>
+				            <td>Хургада Аэропорт</td>
+				            <td>Hurgada Oasis Resort Apartment</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">1 окт 2017 вс</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">3 500 Р</div></td>
+				            <td class="manage-table__col--status">Выполнен</td>
+				        </tr>
+				        <tr class="js-popup-overflow-on manage-table__row--canceled">
+				            <td class="">5</td>
+				            <td>Хургада Аэропорт</td>
+				            <td>Hurgada Oasis Resort Apartment</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">1 окт 2017 вс</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">3 500 Р</div></td>
+				            <td class="manage-table__col--status">Отменен
+				            	<!-- <div class="manage-table__status-swipe">Отменен</div>
+				            	<div class="manage-table__actions  manage-table__actions--hidden">
+				            		<div class="manage-table__action-btn  manage-table__action-btn--red">
+				            			<button class="mdl-button mdl-js-button mdl-button--fab  mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+											<i class="material-icons">delete_forever</i>
+										</button>
+				            		</div>
+				            	</div> -->
+				            </td>
+				        </tr>
+				        <tr class="js-popup-overflow-on">
+				            <td class="">6</td>
+				            <td>Хургада Аэропорт</td>
+				            <td>Hurgada Oasis Resort Apartment</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">1 окт 2017 вс</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">3 500 Р</div></td>
+				            <td class="manage-table__col--status"><b>Новый</b></td>
+				        </tr>
+				    </tbody>
+				</table>
+
+				<ul class="manage-pagination">
+				    <li class="manage-pagination__item  manage-pagination__item--disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+				    <li class="manage-pagination__item  manage-pagination__item--active"><a href="#!">1</a></li>
+				    <li class="manage-pagination__item"><a href="#!">2</a></li>
+				    <li class="manage-pagination__item"><a href="#!">3</a></li>
+				    <li class="manage-pagination__item"><a href="#!">4</a></li>
+				    <li class="manage-pagination__item"><a href="#!">5</a></li>
+				    <li class="manage-pagination__item"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+				</ul>
+
+				<div class="manage-infobar">
+					<div class="manage-infobar__item">Выполнено: 54</div>
+					<div class="manage-infobar__item">Не выполнено: 2</div>
+					<div class="manage-infobar__item">Отменено: 2</div>
+					<div class="manage-infobar__item  manage-infobar__item--right">Заработано: <b>54 054 P</b></div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer  footer_responsive">
+			<div class="footer__content">
+				<div class="footer-top clearfix">
+					<div class="header__contact  header__contact--in-footer">
+						<div class="header__contact-number">8 <span>[</span>495<span>]</span> 777-23-77</div>
+						<div class="header__contact-text">клиентская поддержка</div>
+					</div>
+					<div class="switcher-сurrency switcher-сurrency_footer switcher-сurrency_position_right">
+						<div class="switcher-сurrency__field js-currency-popup">
+							<div class="switcher-сurrency__value">Рубль</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="switcher-popup">
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf1">
+								<label for="sf1" class="switcher-popup__item-dd-label js-currency">Доллар</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf2">
+								<label for="sf2" class="switcher-popup__item-dd-label js-currency">Евро</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf3">
+								<label for="sf3" class="switcher-popup__item-dd-label js-currency">Гривна</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf4">
+								<label for="sf4" class="switcher-popup__item-dd-label js-currency">Рубль</label>
+							</div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav__item  footer-nav__item_active"><a href="#" class="footer-nav__link">Заказы</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Маршруты и цены</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Данные поставщика</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Как этим пользоваться</a></div>
+					</div>
+				</div>
+				<div class="footer-board clearfix">
+					<div class="footer-board__logo"><img src="images/logo.png" alt=""></div>
+					<div class="footer-board__text">CarsRent — система подбора и заказа самого быстрого и удобного трансфера из аэропорта до отеля. Используя наш сервис вы точно найдете самое выгодное предложение, которое позволит вам сэкономить на такси до отеля. Оформите заказ за 24 часа до прилета и мы обязательно встретим и доставим вас куда вы укажите.</div>
+				</div>
+				<div class="footer-bot">
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">О проекте</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Обратная связь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Помощь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Пользовательское соглашение</a></div>
+					<div class="footer-bot__item">
+						<div class="footer-bot__company">CarsRent, 2012-2017. Все права защищены</div>
+					</div>
+					<div class="footer-bot__item footer-bot__item_logo">
+						<div class="footer-bot__logo">
+							<img src="images/tophotels.png" alt="" class="footer-bot__logo-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+		<div class="popup-overflow  popup-overflow--dark  js-popup-overflow">
+			
+			<div class="popup  manage-popup  manage-popup--wide">
+				<div class="manage-popup__head">
+					<div class="reservation-block__desc">Order number <span>36541</span></div>
+					<div class="manage-popup__close  js-popup-overflow-close"><i class="material-icons">close</i></div>
+				</div>
+				
+				<div class="reservation-block">
+					
+					<div class="reservation-block__items">
+						<div class="reservation-block__item">
+							<div class="reservation-block__subtitle">Passenger details</div>
+							<div class="reservation-block__table">
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Name</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">Irina Momot</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Phone</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">+7 (927) 268-06-41</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Email</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">irinatst@rambler.ru</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reservation-block__item">
+							<div class="reservation-block__subtitle">Transfer information</div>
+							<div class="reservation-block__table">
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Arriving</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">4 Mar 2017, 20:10</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Pick-up</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">Istanbul Sabiha Gokcen Airport, Turkey</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Flight Number</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">PC 885</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Drop-off</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">Nobethane Caddesi, No:1 (34112) Sirkeci, Istanbul, Fatih, Turkey</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Vehicle type</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">Standart (up to 4 passengers and 3 luggage)</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Passengers</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">2</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Duration</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">45 min</div>
+									</div>
+								</div>
+								<div class="reservation-block__row">
+									<div class="reservation-block__col  reservation-block__col--label">
+										<div class="reservation-block__text  reservation-block__text--gray">Company phone</div>
+									</div>
+									<div class="reservation-block__col">
+										<div class="reservation-block__text">+90 541 244 2123</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reservation-block-cost  reservation-block-cost--narrow">
+						<div class="reservation-block-cost__table">
+							<div class="reservation-block-cost__row">
+								<div class="reservation-block-cost__col">
+									<div class="reservation-block-cost__text">Prepaid</div>
+								</div>
+								<div class="reservation-block-cost__col">
+									<div class="reservation-block-cost__text"><b>4 EUR</b> 269 RUB</div>
+								</div>
+							</div>
+							<div class="reservation-block-cost__row">
+								<div class="reservation-block-cost__col">
+									<div class="reservation-block-cost__text">Pay to driver</div>
+								</div>
+								<div class="reservation-block-cost__col">
+									<div class="reservation-block-cost__text"><b>48 EUR</b> 3 360 RUB</div>
+								</div>
+							</div>
+							<div class="reservation-block-cost__row">
+								<div class="reservation-block-cost__col">
+									<div class="reservation-block-cost__text">Total amount</div>
+								</div>
+								<div class="reservation-block-cost__col">
+									<div class="reservation-block-cost__text"><b>52 EUR</b> 3 329 RUB</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="manage-popup__row">
+						<button class="block-btn  manage-popup__btn  manage-popup__btn--green  mdl-js-button  mdl-js-ripple-effect">Принять</button>
+						<button class="block-btn  manage-popup__btn  manage-popup__btn--red  mdl-js-button  mdl-js-ripple-effect">Отказаться</button>
+						<button class="block-btn  manage-popup__btn  manage-popup__btn--red  mdl-js-button  mdl-js-ripple-effect">Удалить</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/vendor/material.min.js"></script>
+
+	</div>
+</body>
+</html>

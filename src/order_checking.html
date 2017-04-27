@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carsrent</title>
+
+	//= template/styles.html
+
+</head>
+<body>
+	<div class="page">
+		
+		//= template/header.html
+
+		<main class="content">
+			<div class="form  form--checking">
+				<div class="js-form-step1">
+					<div class="form__section  form__section--w610">
+						<div class="form__title">Проверка состояния вашего заказа</div>
+						<div class="form__table">
+							<div class="form__row">
+								<div class="form__col">
+									<div class="form__group">
+										<div class="form__field  form__field_error">
+											<i class="form__flat"></i>
+											<input type="text" class="form__input  js-form-input" placeholder="Номер заказа">
+										</div>
+									</div>
+									<div class="form__msg  form__msg_error">Введите номер вашего заказа</div>
+
+									<div>
+										<button class="form__btn js-step2 mdl-js-button mdl-js-ripple-effect">
+											<span class="form__btn-text">Далее</span> <span class="form__btn-module"><i class="fa fa-chevron-right"></i></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="js-form-step2" style="display: none;">
+					<div class="form__section  form__section--w610">
+						<div class="form__title">Проверка состояния вашего заказа</div>
+						<div class="form__desc">На номер телефона, указанный в заявке был отправлен код подтверждения. Введите его в поле ниже для получения доступа к информации о статусе трансфера.</div>
+						<div class="form__table">
+							<div class="form__row">
+								<div class="form__col">
+									<div class="form__group">
+										<div class="form__field">
+											<i class="form__flat"></i>
+											<input type="text" class="form__input  js-form-input" placeholder="Код из СМС">
+										</div>
+									</div>
+									<div class="form__msg">Код отправлен на номер, указанный в заявке</div>
+									
+									<div class="direction-block  direction-block--in-form">
+										<div class="direction-block__info">
+											<div class="direction-block__info-item">
+												<a href="javascript:void(0)" class="direction-block__link">Отправить повторное СМС</a>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<button class="form__btn js-step3 mdl-js-button mdl-js-ripple-effect">
+											<span class="form__btn-text">Продолжить</span> <span class="form__btn-module"><i class="fa fa-chevron-right"></i></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="js-form-step3" style="display: none;">
+					<div class="reservation-block">
+						<div class="reservation-block__title">BOOKING CONFIRMATION</div>
+						<div class="reservation-block__desc">Your booking <span>36541</span> has been confirmed</div>
+						
+						<div class="reservation-block__items">
+							<div class="reservation-block__item">
+								<div class="reservation-block__subtitle">Passenger details</div>
+								<div class="reservation-block__table">
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Name</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">Irina Momot</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Phone</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">+7 (927) 268-06-41</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Email</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">irinatst@rambler.ru</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reservation-block__item">
+								<div class="reservation-block__subtitle">Transfer information</div>
+								<div class="reservation-block__table">
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Arriving</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">4 Mar 2017, 20:10</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Pick-up</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">Istanbul Sabiha Gokcen Airport, Turkey</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Flight Number</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">PC 885</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Drop-off</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">Nobethane Caddesi, No:1 (34112) Sirkeci, Istanbul, Fatih, Turkey</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Vehicle type</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">Standart (up to 4 passengers and 3 luggage)</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Passengers</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">2</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Duration</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">45 min</div>
+										</div>
+									</div>
+									<div class="reservation-block__row">
+										<div class="reservation-block__col  reservation-block__col--label">
+											<div class="reservation-block__text  reservation-block__text--gray">Company phone</div>
+										</div>
+										<div class="reservation-block__col">
+											<div class="reservation-block__text">+90 541 244 2123</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="reservation-block-cost">
+							<div class="reservation-block-cost__table">
+								<div class="reservation-block-cost__row">
+									<div class="reservation-block-cost__col">
+										<div class="reservation-block-cost__text">Prepaid</div>
+									</div>
+									<div class="reservation-block-cost__col">
+										<div class="reservation-block-cost__text"><b>4 EUR</b> 269 RUB</div>
+									</div>
+								</div>
+								<div class="reservation-block-cost__row">
+									<div class="reservation-block-cost__col">
+										<div class="reservation-block-cost__text">Pay to driver</div>
+									</div>
+									<div class="reservation-block-cost__col">
+										<div class="reservation-block-cost__text"><b>48 EUR</b> 3 360 RUB</div>
+									</div>
+								</div>
+								<div class="reservation-block-cost__row">
+									<div class="reservation-block-cost__col">
+										<div class="reservation-block-cost__text">Total amount</div>
+									</div>
+									<div class="reservation-block-cost__col">
+										<div class="reservation-block-cost__text"><b>52 EUR</b> 3 329 RUB</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+
+		//= template/footer.html
+
+		//= template/scripts.html
+
+	</div>
+</body>
+</html>

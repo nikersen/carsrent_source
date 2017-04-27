@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/material.css">
+
+</head>
+<body>
+	<div class="page  page--not-responsive">
+
+		<header class="header">
+			<a href="index.html" class="header__logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="header__content">
+				<div class="header-responsive-btn">
+					<span class="header-responsive-btn__text">Меню</span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+				</div>
+				<div class="header-responsive-menu">
+					<nav class="header-nav">
+						<ul>
+							<li class="header-nav__item">
+								<a href="order_checking.html" class="header-nav__link active">Заказы</a> 
+								<span class="header-nav__badge">1350</span>
+							</li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Маршруты и цены</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Данные поставщика</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Как этим пользоваться</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			
+			<div class="manage">
+				
+				<div class="manage-panel">
+					<a href="cabinet_editor.html">
+						<button class="manage-panel__btn  
+								manage-panel__btn--right  block-btn  mdl-js-button  mdl-js-ripple-effect">
+								<i class="material-icons">playlist_add</i> 
+								Добавить маршрут
+						</button>
+					</a>
+				</div>
+
+				<table class="manage-table">
+				    <thead>
+				        <tr>
+				            <th class="">#</th>
+				            <th><a href="#" class="manage-table__sort">Откуда</a></th>
+				            <th><a href="#" class="manage-table__sort">Куда</a></th>
+				            <th><a href="#" class="manage-table__sort">Тип трансфера</a></th>
+				            <th><a href="#" class="manage-table__sort">Цена 1-ого ДК</a></th>
+				            <th><a href="#" class="manage-table__sort">Цена 2-ого ДК</a></th>
+				            <th><a href="#" class="manage-table__sort">Стоимость</a></th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr class="js-manage-table-menu-row">
+				            <td class="">1</td>
+				            <td>Верона Аэропорт</td>
+				            <td>Rizzi Aquacharme Hotel & Spa</td>
+				            <td>Standard</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">Бесплатно</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">Бесплатно</div></td>
+				            <td>
+				            	<div class="manage-table__text  manage-table__text--nowrap">
+				            		<span class="manage-table__price">322 500 Р</span>
+									
+									<div class="manage-table__menu  manage-table__menu--in-table">
+						            	<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="material-icons">more_vert</i>
+										</button>
+
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+										    for="demo-menu-lower-right">
+											<li class="mdl-menu__item"><a href="cabinet_editor.html">Редактировать</a></li>
+											<li class="mdl-menu__item">Удалить</li>
+										</ul>
+									</div>
+				            	</div>
+				            </td>
+				        </tr>
+				        <tr class="js-manage-table-menu-row">
+				            <td class="">2</td>
+				            <td>Верона Аэропорт</td>
+				            <td>Rizzi Aquacharme Hotel & Spa</td>
+				            <td>Standard</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">300 Р</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">300 Р</div></td>
+				            <td>
+				            	<div class="manage-table__text  manage-table__text--nowrap">
+				            		<span class="manage-table__price">5 500 Р</span>
+									
+									<div class="manage-table__menu  manage-table__menu--in-table">
+						            	<button id="demo-menu-lower-right2" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="material-icons">more_vert</i>
+										</button>
+
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+										    for="demo-menu-lower-right2">
+											<li class="mdl-menu__item"><a href="cabinet_editor.html">Редактировать</a></li>
+											<li class="mdl-menu__item">Удалить</li>
+										</ul>
+									</div>
+				            	</div>
+				            </td>
+				        </tr>
+				        <tr class="js-manage-table-menu-row">
+				            <td class="">3</td>
+				            <td>Верона Аэропорт</td>
+				            <td>Rizzi Aquacharme Hotel & Spa</td>
+				            <td>Standard</td>
+				            <td></td>
+				            <td></td>
+				            <td>
+				            	<div class="manage-table__text  manage-table__text--nowrap">
+				            		<span class="manage-table__price">3 500 Р</span>
+									
+									<div class="manage-table__menu  manage-table__menu--in-table">
+						            	<button id="demo-menu-lower-right3" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="material-icons">more_vert</i>
+										</button>
+
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+										    for="demo-menu-lower-right3">
+											<li class="mdl-menu__item"><a href="cabinet_editor.html">Редактировать</a></li>
+											<li class="mdl-menu__item">Удалить</li>
+										</ul>
+									</div>
+				            	</div>
+				            </td>
+				        </tr>
+				        <tr class="js-manage-table-menu-row">
+				            <td class="">2</td>
+				            <td>Верона Аэропорт</td>
+				            <td>Rizzi Aquacharme Hotel & Spa</td>
+				            <td>Standard</td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">Бесплатно</div></td>
+				            <td><div class="manage-table__text  manage-table__text--nowrap">300 Р</div></td>
+				            <td>
+				            	<div class="manage-table__text  manage-table__text--nowrap">
+				            		<span class="manage-table__price">3 500 Р</span>
+									
+									<div class="manage-table__menu  manage-table__menu--in-table">
+						            	<button id="demo-menu-lower-right4" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="material-icons">more_vert</i>
+										</button>
+
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+										    for="demo-menu-lower-right4">
+											<li class="mdl-menu__item"><a href="cabinet_editor.html">Редактировать</a></li>
+											<li class="mdl-menu__item">Удалить</li>
+										</ul>
+									</div>
+				            	</div>
+				            </td>
+				        </tr>
+				    </tbody>
+				</table>
+
+				<a href="cabinet_editor.html" class="more-btn">Добавить маршрут</a>
+				
+			</div>
+
+		</main>
+
+		<footer class="footer  footer_responsive">
+			<div class="footer__content">
+				<div class="footer-top clearfix">
+					<div class="header__contact  header__contact--in-footer">
+						<div class="header__contact-number">8 <span>[</span>495<span>]</span> 777-23-77</div>
+						<div class="header__contact-text">клиентская поддержка</div>
+					</div>
+					<div class="switcher-сurrency switcher-сurrency_footer switcher-сurrency_position_right">
+						<div class="switcher-сurrency__field js-currency-popup">
+							<div class="switcher-сurrency__value">Рубль</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="switcher-popup">
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf1">
+								<label for="sf1" class="switcher-popup__item-dd-label js-currency">Доллар</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf2">
+								<label for="sf2" class="switcher-popup__item-dd-label js-currency">Евро</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf3">
+								<label for="sf3" class="switcher-popup__item-dd-label js-currency">Гривна</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf4">
+								<label for="sf4" class="switcher-popup__item-dd-label js-currency">Рубль</label>
+							</div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav__item  footer-nav__item_active"><a href="#" class="footer-nav__link">Заказы</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Маршруты и цены</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Данные поставщика</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Как этим пользоваться</a></div>
+					</div>
+				</div>
+				<div class="footer-board clearfix">
+					<div class="footer-board__logo"><img src="images/logo.png" alt=""></div>
+					<div class="footer-board__text">CarsRent — система подбора и заказа самого быстрого и удобного трансфера из аэропорта до отеля. Используя наш сервис вы точно найдете самое выгодное предложение, которое позволит вам сэкономить на такси до отеля. Оформите заказ за 24 часа до прилета и мы обязательно встретим и доставим вас куда вы укажите.</div>
+				</div>
+				<div class="footer-bot">
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">О проекте</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Обратная связь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Помощь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Пользовательское соглашение</a></div>
+					<div class="footer-bot__item">
+						<div class="footer-bot__company">CarsRent, 2012-2017. Все права защищены</div>
+					</div>
+					<div class="footer-bot__item footer-bot__item_logo">
+						<div class="footer-bot__logo">
+							<img src="images/tophotels.png" alt="" class="footer-bot__logo-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- <div class="popup  manage-popup  js-popup">
+			<div class="manage-popup__head">
+				<div class="manage-popup__title">Редактор маршрута</div>
+				<div class="manage-popup__close  js-popup-close"><i class="material-icons">close</i></div>
+			</div>
+			
+			<div class="js-tab">
+				<div class="form__label">Откуда</div>
+				<div class="form__group  form__group--100">
+					<div class="form__field  js-modal-on">
+						<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+						<div class="form__trigger  form__trigger--clear"><i class="material-icons">expand_more</i></div>
+					</div>
+					<div class="form-modal  form-modal--time  js-modal">
+						<div class="form-modal__body">
+							<div class="form-modal__suggest  form-modal__suggest--airport">
+								<div class="form-modal__suggest-item js-form-suggest">
+									<div class="form-modal__suggest-text">Домодедово</div>
+									<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+								</div>
+							</div>
+							<div class="form-modal__suggest  form-modal__suggest--hotel">
+								<div class="form-modal__suggest-item js-form-suggest">
+									<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+									<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+								</div>
+							</div>
+							<div class="form-modal__suggest  form-modal__suggest--address">
+								<div class="form-modal__suggest-item js-form-suggest">
+									<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+									<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__label">Куда</div>
+				<div class="form__group  form__group--100">
+					<div class="form__field  js-modal-on">
+						<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+						<div class="form__trigger  form__trigger--clear"><i class="material-icons">expand_more</i></div>
+					</div>
+					<div class="form-modal  form-modal--time  js-modal">
+						<div class="form-modal__body">
+							<div class="form-modal__suggest  form-modal__suggest--airport">
+								<div class="form-modal__suggest-item js-form-suggest">
+									<div class="form-modal__suggest-text">Домодедово</div>
+									<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+								</div>
+							</div>
+							<div class="form-modal__suggest  form-modal__suggest--hotel">
+								<div class="form-modal__suggest-item js-form-suggest">
+									<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+									<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+								</div>
+							</div>
+							<div class="form-modal__suggest  form-modal__suggest--address">
+								<div class="form-modal__suggest-item js-form-suggest">
+									<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+									<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__label">Тип трансфера</div>
+				<div class="form__group  form__group--100">
+					<div class="form__field  js-modal-on">
+						<input id="from" type="text" class="form__input  js-form-input  js-form-text-val" placeholder="Аэропорт, отель, место или адрес">
+						<div class="form__trigger  form__trigger--clear"><i class="material-icons">expand_more</i></div>
+					</div>
+					<div class="form-modal  form-modal--time  js-modal">
+						<div class="form-modal__body">
+							<div class="form-modal__list">
+								<div class="form-modal__list-item js-form-text">Хороший</div>
+								<div class="form-modal__list-item js-form-text">Плохой</div>
+								<div class="form-modal__list-item js-form-text">Злой</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<label class="form__cbx-label  js-baby-chair-trigger">
+	                <input type="checkbox" class="form__cbx-input" checked="">
+	                <span class="form__cbx-box"><span></span></span>
+	                <span class="form__cbx-text">Есть детское кресло</span>
+	            </label>
+				<a href="javascript:void(0)" class="form__btn js-tab-on mdl-js-button mdl-js-ripple-effect" data-tab-role="2">
+					<span class="form__btn-text">Далее</span> <span class="form__btn-module"><i class="fa fa-chevron-right"></i></span>
+				</a>
+			</div>
+
+			<div class="js-tab  js-tab2" style="display: none;">
+				<div class="form__label">Стоимость 1-ого детского кресла</div>
+				<div class="form__group  form__group--100">
+					<div class="form__field">
+						<input id="from" type="text" class="form__input  js-form-input" value="Бесплатно" placeholder="Стоимость">
+						<div class="form__field-actions">
+							<div class="form__trigger  form__trigger--clear"><i class="material-icons">close</i></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__label">Стоимость 2-ого детского кресла</div>
+				<div class="form__group  form__group--100">
+					<div class="form__field">
+						<input id="from" type="text" class="form__input  js-form-input" value="Бесплатно" placeholder="Стоимость">
+						<div class="form__field-actions">
+							<div class="form__trigger  form__trigger--clear"><i class="material-icons">close</i></div>
+						</div>
+					</div>
+				</div>
+
+				<a href="javascript:void(0)" class="form__btn js-tab-on mdl-js-button mdl-js-ripple-effect" data-tab-role="3">
+					<span class="form__btn-text">Далее</span> <span class="form__btn-module"><i class="fa fa-chevron-right"></i></span>
+				</a>
+			</div>
+
+			<div class="js-tab  js-tab3" style="display: none;">
+				<div class="form__label">Заказ не позднее</div>
+				<div class="form__group  form__group--100">
+					<div class="form__field  js-modal-on">
+						<span class="form__trigger"><i class="material-icons">access_time</i></span>
+						<input type="hidden" class="form__input  js-form-input  js-form-time-val" placeholder="Время прилета" readonly>
+						<span class="form__val  js-form-text-val"><span class="form__val-placeholder">Время прилета</span></span>
+					</div>
+					<div class="form-modal  form-modal--time  js-modal">
+						<div class="form-modal__body">
+							<div class="form-modal__clock-face  js-hide-modal">
+								<table>
+									<tbody>
+										<tr>
+											<td><a href="#" class="btn"><i class="material-icons">expand_less</i></a></td>
+											<td class="separator"></td>
+											<td><a href="#" class="btn"><i class="material-icons">expand_less</i></a></td>
+										</tr>
+										<tr>
+											<td><span data-action="showHours" class="timepicker-hour">16</span></td>
+											<td class="separator">:</td>
+											<td><span data-action="showMinutes" class="timepicker-minute">00</span></td>
+										</tr>
+									 	<tr>
+											<td><a href="#" class="btn"><i class="material-icons">expand_more</i></a></td>
+											<td class="separator"></td>
+											<td><a href="#" class="btn"><i class="material-icons">expand_more</i></a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form__inline">
+					<div class="form__label">Стоимость трансфера</div>
+					<div class="form__group form__group_mid">
+						<div class="form__field  js-modal-on">
+							<input type="text" class="form__input  js-form-input" placeholder="Стоимость">
+						</div>
+					</div>
+					<div class="form__group form__group_small">
+						<div class="form__field  js-modal-on">
+							<span class="form__trigger"><i class="material-icons">expand_more</i></span>
+							<input type="hidden" class="form__input  js-form-input  js-form-time-val" placeholder="Время прилета" readonly>
+							<div class="form__currency-icon">
+								<i class="fa fa-rub"></i>
+							</div>
+							<span class="form__val  form__val--currency  js-form-text-val"><span class="form__val-placeholder">Рублей</span></span>
+						</div>
+					</div>
+				</div>
+
+				<a href="javascript:void(0)" class="form__btn  js-popup-close  mdl-js-button mdl-js-ripple-effect">
+					<span class="form__btn-text">Сохранить</span> <span class="form__btn-module">+</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="overlay" class="overlay overlay--dark"></div> -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/vendor/material.min.js"></script>
+
+	</div>
+</body>
+</html>

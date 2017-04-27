@@ -1,0 +1,38 @@
+/*
+* Libs
+*/
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/air-datepicker/dist/css/datepicker.min.css";
+
+// Переменные
+@import 'variables';
+
+/*
+* Custom
+*/
+@import "main";
+@import "fonts";
+@import "layouts/header";
+@import "layouts/footer";
+@import "components/common";
+
+// Pages
+@import "pages/order-form/order-form";
+@import "pages/index/index";
+@import "pages/landing/landing";
+@import "pages/login/login";
+	
+	// Cabinet
+	@import "pages/cabinet/cabinet";
+	@import "pages/cabinet/cabinet_orders";
+	@import "pages/cabinet/cabinet_landing";
+
+// Blocks
+@import "blocks/form";
+@import "blocks/catalog";
+@import "blocks/tile";
+@import "blocks/direction-block";
+@import "blocks/reservation-block";
+@import "blocks/block-introduction";
+@import "blocks/popup-save-page";
+

@@ -1,0 +1,5 @@
+# Игнорируем директивы node_modules и bower_components 
+# Так же файлы, .log
+node_modules/
+bower_components/
+*.log

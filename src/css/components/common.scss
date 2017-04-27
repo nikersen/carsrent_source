@@ -1,0 +1,177 @@
+// Кнопка Default
+
+.block-btn {
+	position: relative;
+	overflow: hidden;
+	margin-top: 30px;
+	display: inline-block;
+	font-family: $font;
+	background: $yellow;
+	height: 50px;
+	border: none;
+	outline: none;
+	line-height: 50px;
+	border-radius: 3px;
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 0;
+	.mdl-ripple {
+		background: rgb(255,255,255);
+	}
+	&__text {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		padding: 0 50px;
+		font-weight: 600;
+	}
+	&__module {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 20px;
+		border-left: 1px solid #fff;
+		font-size: 26px;
+		i {
+			font-size: 16px;
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+		}
+	}
+}
+
+
+// Кнопка "Показать еще"
+
+.more-btn {
+	display: block;
+	margin: 20px 0 0;
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 58px;
+    height: 60px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid $yellow;
+    border-radius: 3px;
+    background: $yellow;
+    color: #333;
+    transition: all .1s;
+
+	&--animate.active {
+		background: $yellow;
+		color: #333;
+		&:after {
+			overflow: hidden;
+			position: absolute;
+			content: "";
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+			background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(255, 255, 255, 0.2)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.75, rgba(255, 255, 255, 0.2)), color-stop(0.75, transparent), to(transparent));
+			background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+			background-size: 50px 50px;
+			-webkit-animation: move 2s linear infinite;
+			-moz-animation: move 2s linear infinite;
+			-o-animation: move 2s linear infinite;
+			animation: move 2s linear infinite;
+			z-index: 1; 
+		}
+	}
+
+}
+@-webkit-keyframes move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 50px 50px; } }
+
+@-moz-keyframes move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 50px 50px; } }
+
+@-o-keyframes move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 50px 50px; } }
+
+@keyframes move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 50px 50px; } }
+
+
+// Стили для показа модального, диалогового окна, попапа
+
+.dialog-modal {
+    opacity: 0;
+    visibility: hidden;
+	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+	padding: 5px 0;
+    transition: opacity 0.35s 0s, visibility 0s 0.3s, transform 0.3s 0s, box-shadow .6s;
+    transform: translateY(8px);
+    &.is-visible {
+    	opacity: 1;
+    	visibility: visible;
+		box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    	transform: translateY(0);
+	    transition: opacity 0.35s 0s, visibility 0s 0s, transform 0.3s 0s, box-shadow .4s;
+    }
+}
+
+.popup {
+	display: none;
+}
+
+.popup-overflow {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	z-index: 101;
+
+	&--dark {
+		background: rgba(0,0,0,.3);
+	}
+
+
+	.popup {
+		position: static;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+
+// overlay
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	display: none;
+	background: rgba(0,0,0,0);
+
+	&--dark {
+		background: rgba(0,0,0,.3);
+	}
+}

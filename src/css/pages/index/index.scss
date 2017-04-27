@@ -1,0 +1,47 @@
+
+.index-info {
+	margin-top: 60px;	
+	text-align: center;
+	padding: 0 20px;
+
+	&__title {
+		display: inline-block;
+		color: #278211;
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 1;
+		text-decoration: none;
+		margin-bottom: 11px;	
+
+		span {
+			line-height: 1.4;
+			border-bottom: 1px dotted;
+		}
+	}
+
+	&__desc {
+		font-size: 12px;	
+		color: #666;
+		margin-bottom: 24px;	
+	}
+
+	&__text {
+		font-size: 15px;	
+		line-height: 24px;
+		margin-bottom: 34px;	
+	}
+
+	&__btn {
+		position: relative;
+		display: inline-block;
+		background: #278211;
+		overflow: hidden;
+		line-height: 40px;
+		height: 40px;	
+		padding: 0 20px;
+		width: 220px;	
+		color: #fff;
+		font-weight: 600;	
+		text-decoration: none;
+	}
+}

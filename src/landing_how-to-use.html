@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carsrent</title>
+
+	//= template/styles.html
+
+</head>
+<body>
+	<div class="page">
+		
+		//= template/header.html
+
+		<main class="content">
+			<div class="content__table">
+				<div class="content__col  content__col_main">
+					<div class="landing-htu">
+						<div class="landing-htu__left"></div>
+						<div class="landing-htu__content">
+
+							<div class="landing-htu__title">Как воспользоваться услугой</div>
+
+							<div class="landing-htu__item">
+								<div class="landing-htu__subtitle">1. Укажите нужный маршрут трансфера</div>
+								<div class="landing-htu__text">В форме поиска выберите точки отправления и назначения: аэропорт, город, вокзал и др. Мы выполняем трансферы по всему миру, если вы не нашли вашей точки, отправьте запрос и мы рассчитаем для вас трансфер.</div>
+							</div>
+
+							<div class="landing-htu__item  landing-htu__item--second">
+								<div class="landing-htu__subtitle">2. Оформите заявку</div>
+								<div class="landing-htu__text">Укажите дату и время встречи, адрес или название отеля, дополнительные детали поездки. Оставьте свои контактные данные и внесите предоплату за бронирование. После этого ваша машина сразу будет забронирована.</div>
+							</div>
+
+							<div class="landing-htu__item">
+								<div class="landing-htu__subtitle">3. Водитель встретит вас на месте с табличкой</div>
+								<div class="landing-htu__text">В назначенное время и в указанном месте наш водитель встретит вас. У него будет табличка с вашим именем и вся необходимая информация о поездке. Он поможет погрузить багаж и с комфортом довезет вас до места назначения.</div>
+							</div>
+							
+							<a href="#" class="block-btn mdl-js-button mdl-js-ripple-effect">
+								<div class="block-btn__text">
+									<i class="material-icons">tag_faces</i>
+									Вуаля! Вы на месте!
+								</div>
+							</a>
+						</div>
+						<div class="landing-htu__right"></div>
+					</div>
+
+					<div class="form-search">
+						<div class="form-search__col  form-search__col--from">
+							<label for="from" class="form-search__label">Откуда вас забрать</label>
+							<div class="form__group  form__group--100">
+								<div class="form__field  js-modal-on">
+									<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+								</div>
+								<div class="form-modal  form-modal--time  js-modal">
+									<div class="form-modal__body">
+										<div class="form-modal__suggest  form-modal__suggest--airport">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Домодедово</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--hotel">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--address">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-search__col  form-search__col--separator">
+							<i class="material-icons">chevron_right</i>
+						</div>
+						<div class="form-search__col  form-search__col--to">
+							<label for="to" class="form-search__label">Куда доставить</label>
+							<div class="form__group  form__group--100">
+								<div class="form__field  js-modal-on">
+									<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+								</div>
+								<div class="form-modal  form-modal--time  js-modal">
+									<div class="form-modal__body">
+										<div class="form-modal__suggest  form-modal__suggest--airport">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Домодедово</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--hotel">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--address">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-search__col  form-search__col--btn">
+							<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+								<span class="block-btn__text">Найти автомобиль</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<div style="height: 40px;"></div>
+
+		//= template/footer.html
+
+		<div id="overlay" class="overlay  overlay--dark"></div>
+
+		//= template/scripts.html
+
+	</div>
+</body>
+</html>

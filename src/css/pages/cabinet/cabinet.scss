@@ -1,0 +1,445 @@
+.manage-table {
+	position: relative;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(255,255,255);
+	width: 100%;
+
+	thead {
+		padding-bottom: 3px;
+	}
+
+	tbody {
+		tr:hover {
+			background: rgba(255, 198, 0, 0.15);
+		}
+	}
+
+	tr {
+		cursor: pointer;
+	    position: relative;
+	    transition-duration: 0.28s;
+	    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	    transition-property: background-color;
+
+		&:hover {
+			.manage-table__status-swipe {display: none;}
+			.manage-table__actions--hidden {display: block;}
+			.manage-table__menu--in-table {
+
+				.mdl-button {
+					opacity: 1;
+				}
+			}
+		}
+
+		&.manage-table__row--canceled {
+			background: rgba(255, 17, 0, 0.05);
+		}
+
+		&.manage-table__row--completed {
+			background: rgba(76, 175, 80, 0.15);
+		}
+	}
+
+	td, th {
+	    padding: 0 18px 12px 18px;
+	    text-align: left;
+	}
+
+	th {
+	    position: relative;
+	    vertical-align: bottom;
+	    text-overflow: ellipsis;
+	    font-size: 14px;
+	    font-weight: bold;
+	    line-height: 24px;
+	    white-space: nowrap;
+	    letter-spacing: 0;
+	    height: 48px;
+	    font-size: 12px;
+	    color: rgba(0, 0, 0, 0.54);
+	    box-sizing: border-box;
+
+	    &:first-of-type {
+    	    padding-left: 20px;
+	    }
+	}
+
+	td {
+		position: relative;
+	    vertical-align: middle;
+	    height: 85px;
+	    border-top: 1px solid #ddd;
+	    border-bottom: 1px solid #ddd;
+	    padding-top: 12px;
+	    box-sizing: border-box;
+
+	    &:first-of-type {
+    	    padding-left: 20px;
+	    }
+
+
+	    a {
+	    	text-decoration: none;
+	    	color: inherit;
+	    }
+	}
+	
+	&__col {
+
+		&--status {
+			width: 140px;
+		}
+
+		&--label {
+			width: 200px;
+		}
+	}
+
+	&__sort {
+		font-size: 14px;
+		color: #666;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {text-decoration: underline;}
+	}
+
+	&__actions {
+		white-space: nowrap;
+
+		&--hidden {display: none;}
+	}
+
+	&__action-btn {
+		vertical-align: top;
+		display: inline-block;
+		margin-right: 10px;
+
+		&:last-of-type {margin-right: 0;}
+
+		&--green {
+		
+			.mdl-button--fab.mdl-button--colored {
+				background: rgb(76, 175, 80);
+				&:active,
+				&:hover {
+					background: rgb(76, 175, 80);
+				}
+			}
+		}
+
+		&--red {
+
+			.mdl-button--fab.mdl-button--colored {
+				background: rgb(244, 67, 54);
+				&:active,
+				&:hover {
+					background: rgb(244, 67, 54);
+				}
+			}
+		}
+	}
+
+	&__text {
+
+		&--nowrap {
+			white-space: nowrap;
+		}
+	}
+
+	&__price {
+		margin-right: 10px;
+	}
+
+	&__menu {
+		position: relative;
+		display: inline-block;
+
+		&--in-table {
+
+			.mdl-button {
+				opacity: 0;
+				transition: opacity .1s;
+
+				&:active,
+				&:focus {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+
+	&--profile {
+		border: none;
+
+		td {
+			border: none;
+		}
+	}
+}
+
+.manage-pagination {
+	margin-top: 30px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding-left: 0;
+	font-size: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-left: 20px;
+    list-style-type: none;
+
+    &__item {
+		
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: top;
+	    height: 30px;
+	    font-size: 14px;
+
+	    &+& {border-left: 1px solid #ddd;}
+
+	    &:hover {
+	    	background: rgb(247,247,247);
+	    }
+
+	    a {
+	    	color: #353535;
+		    display: inline-block;
+		    font-size: 1.2rem;
+		    padding: 0 10px;
+		    line-height: 30px;
+		    text-decoration: none;
+	    }
+
+	    i {font-size: 1.9rem;}
+
+
+	    &--active {
+	    	background-color: #353535;
+	    	&:hover {background: #353535;}
+
+	    	a {color: #fff;}
+	    }
+		
+		&--disabled {
+	    	&:hover {background: transparent;}
+
+			a {
+				cursor: default;
+				color: #999;
+			}
+		}
+    }
+}
+
+.manage-infobar {
+	margin-top: 20px;
+	padding-left: 20px;
+	
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 20px;
+
+		&--right {
+			float: right;
+		}
+	}
+}
+
+.manage-panel {
+	margin-bottom: 20px;
+	@include clearfix;
+
+	&__btn {
+		margin-top: 0;
+		border: 1px solid #ddd;
+		background: transparent;
+		padding: 0 20px;
+		outline: none;
+		cursor: pointer;
+		font-size: 14px;
+
+		&--right {
+			float: right;
+		}
+
+		&:hover {
+			border-color: $yellow;
+			background: $yellow;
+		}
+
+		i {
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+}
+
+.manage-popup {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 480px;
+	background: #fff;
+	margin-left: -240px;
+	z-index: 101;
+	padding: 20px 40px;
+	color: #353535;
+
+	&--wide {
+		width: 700px;
+		margin-left: -350px;
+	}
+
+
+	&__head {
+		position: relative;
+		padding-right: 30px;
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+
+		i {
+			vertical-align: top;
+		}
+	}
+
+	&__row {
+		font-size: 0;
+		text-align: center;
+	}
+
+	&__btn {
+		margin-top: 20px;
+		display: inline-block;
+		font-size: 14px;
+		padding: 0 20px;
+		margin-right: 20px;
+		width: 150px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		font-weight: 600;
+
+		&--green {
+			color: #fff;
+			background: rgb(76, 175, 80);
+		}
+
+		&--red {
+			color: #fff;
+			background: rgb(244, 67, 54);
+		}
+
+		&:last-of-type {margin-right: 0;}
+	}
+}
+
+.manage-provider {
+
+	&__title {
+		font-size: 24px;
+		color: #333;
+		font-weight: 600;
+		padding-left: 20px;
+		padding-top: 20px;
+		margin-bottom: 40px;
+
+		&-link {
+			color: $blue;
+			text-decoration: none;
+			font-size: 14px;
+			margin-left: 5px;
+		}
+	}
+
+	&__inline-fields {
+		font-size: 0;
+
+		&--new {
+			padding-left: 20px;
+		}
+
+
+		.form__group {
+			margin-right: 0;
+
+			&+.form__group {
+
+				.form__field {
+					border-left: none;
+				}
+			}
+		}
+
+		.block-btn {
+			margin-top: 0;
+			border-radius: 0;
+			margin-left: -1px;
+
+			&__module {
+				border-left: none;
+			}
+		}
+	}
+
+	&__contact {
+		position: relative;
+		top: 1px;
+		display: inline-block;
+		line-height: 50px;
+		padding-left: 11px;
+		margin-right: 10px;
+
+		&--priority {
+			position: relative;
+
+			&:after {
+				@include md-icon;
+				content: 'star';
+				position: absolute;
+				top: 50%;
+				left: -15px;
+				margin-top: -10px;
+				color: $yellow;
+			}
+		}
+	}
+
+	&__delete {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 15px;
+		line-height: 50px;
+
+		i {
+			vertical-align: middle;
+			color: #333;
+		}
+	}
+	
+
+	&--big-height {min-height: 500px;}
+
+
+	.form__table {
+		margin-left: 20px;
+	}
+}

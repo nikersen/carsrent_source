@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/material.css">
+
+</head>
+<body>
+	<div class="page  page--login">
+
+		<div class="auth-wrapper">
+			<div class="auth-area">
+				<!-- Регистрация  -->
+				<div class="auth-form personal">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-activate"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Введите данные о себе</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<label for="" class="auth-form__label">Электронная почта</label>
+								<input type="text" class="auth-form__input" placeholder="yourname@example.com">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__eye" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Телефон</label>
+								<input type="text" class="auth-form__input  js-auth-phone" placeholder="+___(__)__________">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__eye" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Название компании (на английском)</label>
+								<input type="text" class="auth-form__input" placeholder="Компания">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__trigger" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Cтрана работы</label>
+								<input type="text" class="auth-form__input" placeholder="Например: Россия">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+							<div class="auth-form-popup">
+								<ul class="auth-form-popup__list">
+									<li class="auth-form-popup__item">Россия</li>
+									<li class="auth-form-popup__item">Греция</li>
+									<li class="auth-form-popup__item">Турция</li>
+									<li class="auth-form-popup__item">Италия</li>
+								</ul>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__trigger" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Город работы</label>
+								<input type="text" class="auth-form__input" placeholder="Например: Москва">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+							<div class="auth-form-popup">
+								<ul class="auth-form-popup__list">
+									<li class="auth-form-popup__item">Москва</li>
+									<li class="auth-form-popup__item">Казань</li>
+									<li class="auth-form-popup__item">Сочи</li>
+									<li class="auth-form-popup__item">Краснодар</li>
+								</ul>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<label class="form__cbx-label  form__cbx-label--login">
+                                    <input type="checkbox" class="form__cbx-input">
+                                    <span class="form__cbx-box"><span></span></span>
+                                    <span class="form__cbx-text">Я хочу получать новости CarsRent</span>
+                                </label>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-validate js-form-welcome" value="Зарегистрироваться">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Восстановление пароля  -->
+				<div class="auth-form recovery">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-login"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Восстановление пароля</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<label for="" class="auth-form__label">Введите ваш e-mail</label>
+								<input type="text" class="auth-form__input" placeholder="yourname@example.com">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-validate js-form-recovery-info" value="выслать пароль">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Восстановите аккаунт  -->
+				<div class="auth-form recovery-info">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-recovery"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Восстановление пароля</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__text">На вашу почту <a href="#">ivan_ivanov@gmail.com</a> отправленно письмо с дальнейшими указаниями по восстановлению пароля</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<a href="#!" class="auth-form__submit auth-form__submit_transparent js-form-recovery-new">открыть почту</a>
+								<!-- <input type="submit" class="auth-form__submit auth-form__submit_transparent" value="открыть почту"> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Форма восстановление пароля  -->
+				<div class="auth-form recovery-new">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-recovery-info"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Восстановление пароля</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<div class="auth-form__title">iamuser2017</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__eye" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Пароль</label>
+								<input type="password" class="auth-form__input" placeholder="Придумайте пароль">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__eye" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Повторите пароль</label>
+								<input type="password" class="auth-form__input" placeholder="Введите пароль">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-validate js-form-recovery-success" value="Восстановить пароль">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Пароль успешно восстановлен  -->
+				<div class="auth-form recovery-success">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-recovery-new"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Восстановление пароля</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__text">Пароль успешно изменен!</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-form-login" value="Ок">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Активируйте аккаунт  -->
+				<div class="auth-form activate">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-registration"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Активируйте ваш аккаунт</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__text">Кликните на ссылку, которую мы отправили на ваш электронный адрес <a href="#">ivan_ivanov@gmail.com</a>.</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<a href="#!" class="auth-form__submit js-form-personal">открыть почту</a>
+								<!-- <input type="submit" class="auth-form__submit auth-form__submit_transparent" value="открыть почту"> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Добро пожаловать  -->
+				<div class="auth-form welcome">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-personal"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Добро пожаловать на CarsRent</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__text">Добро пожаловать в личный кабинет поставщика CarsRent</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-form-login" value="Перейти к профилю">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Регистрация  -->
+				<div class="auth-form registration">
+					<div class="auth-form__head">
+						<div class="auth-form__close js-form-login"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Регистрация</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<label for="" class="auth-form__label">Введите ваш e-mail</label>
+								<input type="text" class="auth-form__input" placeholder="yourname@example.com">
+								<div class="auth-form__message">Ошибка</div>
+							</div>
+						</div>
+						<div class="auth-form__item auth-form__item_submit">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-validate js-form-activate" value="далее">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Вход  -->
+				<div class="auth-form login">
+					<div class="auth-form__head">
+						<div class="auth-form__close"></div>
+						<a href="index.html" class="auth-form__logo"></a>
+					</div>
+					<div class="auth-form__body">
+						<div class="auth-form__top">
+							<div class="auth-form__title">Вход в личный кабинет</div>
+							<a href="#" class="auth-form__link auth-form__link_right js-form-personal">Регистрация</a>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<label for="" class="auth-form__label">Электронная почта</label>
+								<input type="text" class="auth-form__input" placeholder="Введите ваш e-mail">
+								<div class="auth-form__message">Данный элекронный адрес не зарегистрирован</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<i class="auth-form__eye" onclick="$(this).toggleClass('active');"></i>
+								<label for="" class="auth-form__label">Пароль</label>
+								<input type="password" class="auth-form__input" placeholder="Введите пароль">
+								<div class="auth-form__message">Пароль неверный. Осталось 3 попытки</div>
+							</div>
+						</div>
+						<div class="auth-form__item">
+							<div class="auth-form__field">
+								<a href="#" class="auth-form__link js-form-recovery">Забыли пароль?</a>
+							</div>
+						</div>
+						<div class="auth-form__item auth-form__item_submit">
+							<div class="auth-form__field">
+								<input type="submit" class="auth-form__submit js-validate" value="войти">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/vendor/material.min.js"></script>
+
+	</div>
+</body>
+</html>

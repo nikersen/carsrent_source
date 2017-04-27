@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Carsrent</title>
+
+	//= template/styles.html
+
+</head>
+<body>
+	<div class="page  page--not-responsive">
+
+		//= template/header_cabinet.html
+
+		<main class="content">
+			<div class="content__table">
+				<div class="content__col">
+					
+					<div class="form">
+						
+						<div class="form__table">
+							<div class="form__row">
+								<div class="form__col">	
+									<div class="form__label">Откуда</div>
+									<div class="form__group">
+										<div class="form__field  js-modal-on">
+											<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+											<div class="form__trigger  form__trigger--clear"><i class="material-icons">expand_more</i></div>
+										</div>
+										<div class="form-modal  form-modal--time  js-modal">
+											<div class="form-modal__body">
+												<div class="form-modal__suggest  form-modal__suggest--airport">
+													<div class="form-modal__suggest-item js-form-suggest">
+														<div class="form-modal__suggest-text">Домодедово</div>
+														<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+													</div>
+												</div>
+												<div class="form-modal__suggest  form-modal__suggest--hotel">
+													<div class="form-modal__suggest-item js-form-suggest">
+														<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+														<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+													</div>
+												</div>
+												<div class="form-modal__suggest  form-modal__suggest--address">
+													<div class="form-modal__suggest-item js-form-suggest">
+														<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+														<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">	
+									<div class="form__label">Куда</div>
+									<div class="form__group">
+										<div class="form__field  js-modal-on">
+											<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+											<div class="form__trigger  form__trigger--clear"><i class="material-icons">expand_more</i></div>
+										</div>
+										<div class="form-modal  form-modal--time  js-modal">
+											<div class="form-modal__body">
+												<div class="form-modal__suggest  form-modal__suggest--airport">
+													<div class="form-modal__suggest-item js-form-suggest">
+														<div class="form-modal__suggest-text">Домодедово</div>
+														<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+													</div>
+												</div>
+												<div class="form-modal__suggest  form-modal__suggest--hotel">
+													<div class="form-modal__suggest-item js-form-suggest">
+														<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+														<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+													</div>
+												</div>
+												<div class="form-modal__suggest  form-modal__suggest--address">
+													<div class="form-modal__suggest-item js-form-suggest">
+														<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+														<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">	
+									<div class="form__label">Тип трансфера</div>
+									<div class="form__group">
+										<div class="form__field  js-modal-on">
+											<input id="from" type="text" class="form__input  js-form-input  js-form-text-val" placeholder="Аэропорт, отель, место или адрес">
+											<div class="form__trigger  form__trigger--clear"><i class="material-icons">expand_more</i></div>
+										</div>
+										<div class="form-modal  form-modal--time  js-modal">
+											<div class="form-modal__body">
+												<div class="form-modal__list">
+													<div class="form-modal__list-item js-form-text">Хороший</div>
+													<div class="form-modal__list-item js-form-text">Плохой</div>
+													<div class="form-modal__list-item js-form-text">Злой</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<label class="form__cbx-label  js-baby-chair-trigger">
+						                <input type="checkbox" class="form__cbx-input" checked="">
+						                <span class="form__cbx-box"><span></span></span>
+						                <span class="form__cbx-text">Есть детское кресло</span>
+						            </label>
+								</div>
+							</div>
+							<div class="form__row  js-baby-chair">
+								<div class="form__col">	
+									<div class="form__label">Стоимость 1-ого детского кресла</div>
+									<div class="form__group">
+										<div class="form__field">
+											<input id="from" type="text" class="form__input  js-form-input" value="Бесплатно" placeholder="Стоимость">
+											<div class="form__field-actions">
+												<div class="form__trigger  form__trigger--clear"><i class="material-icons">close</i></div>
+											</div>
+										</div>
+									</div>
+									<div class="form__label">Стоимость 2-ого детского кресла</div>
+									<div class="form__group">
+										<div class="form__field">
+											<input id="from" type="text" class="form__input  js-form-input" value="Бесплатно" placeholder="Стоимость">
+											<div class="form__field-actions">
+												<div class="form__trigger  form__trigger--clear"><i class="material-icons">close</i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">	
+									<div class="form__label">Заказ не позднее</div>
+									<div class="form__group">
+										<div class="form__field  js-modal-on">
+											<span class="form__trigger"><i class="material-icons">access_time</i></span>
+											<input type="hidden" class="form__input  js-form-input  js-form-time-val" placeholder="Время прилета" readonly>
+											<span class="form__val  js-form-text-val"><span class="form__val-placeholder">Время прилета</span></span>
+										</div>
+										<div class="form-modal  form-modal--time  js-modal">
+											<div class="form-modal__body">
+												<div class="form-modal__clock-face  js-hide-modal">
+													<table>
+														<tbody>
+															<tr>
+																<td><a href="#" class="btn"><i class="material-icons">expand_less</i></a></td>
+																<td class="separator"></td>
+																<td><a href="#" class="btn"><i class="material-icons">expand_less</i></a></td>
+															</tr>
+															<tr>
+																<td><span data-action="showHours" class="timepicker-hour">16</span></td>
+																<td class="separator">:</td>
+																<td><span data-action="showMinutes" class="timepicker-minute">00</span></td>
+															</tr>
+														 	<tr>
+																<td><a href="#" class="btn"><i class="material-icons">expand_more</i></a></td>
+																<td class="separator"></td>
+																<td><a href="#" class="btn"><i class="material-icons">expand_more</i></a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">	
+									<div class="form__inline">
+										<div class="form__label">Стоимость трансфера</div>
+										<div class="form__group form__group_mid">
+											<div class="form__field  js-modal-on">
+												<input type="text" class="form__input  js-form-input" placeholder="Стоимость">
+											</div>
+										</div>
+										<div class="form__group form__group_small">
+											<div class="form__field  js-modal-on">
+												<span class="form__trigger"><i class="material-icons">expand_more</i></span>
+												<input type="hidden" class="form__input  js-form-input  js-form-time-val" placeholder="Время прилета" readonly>
+												<div class="form__currency-icon">
+													<!-- <i class="fa fa-euro"></i> -->
+													<!-- <i class="fa fa-usd"></i> -->
+													<i class="fa fa-rub"></i>
+												</div>
+												<span class="form__val  form__val--currency  js-form-text-val"><span class="form__val-placeholder">Рублей</span></span>
+											</div>
+										</div>
+									</div>
+
+									<a href="javascript:void(0)" class="form__btn  js-popup-close  mdl-js-button mdl-js-ripple-effect">
+										<span class="form__btn-text">Сохранить</span> <span class="form__btn-module">+</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="content__col  content__col--w330"></div>
+			</div>
+		</main>
+
+		//= template/footer_cabinet.html
+
+		//= template/scripts.html
+
+	</div>
+</body>
+</html>

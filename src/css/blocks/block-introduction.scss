@@ -1,0 +1,54 @@
+.block-introduction {
+	padding-top: 30px;
+	text-align: center;
+	
+	&__title {
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+		padding: 23px 25px 32px;
+		width: 25%;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+
+	@media(max-width: 800px) {
+		
+		&__row {
+			border: none;
+			display: block;
+			text-align: center;
+		}
+
+		&__item {
+			display: inline-block;
+			vertical-align: top;
+			width: 250px;
+			padding: 10px 20px 20px;
+		}
+		
+	}
+}
+
+.block-introduction__img { 
+	margin-bottom: 23px;
+	display: inline-block; background: url(../images/introduction_sprite.png) no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; 
+
+	&--img1 { background-position: -5px -5px; width: 70px; height: 70px; }
+	&--img2 { background-position: -5px -80px; width: 70px; height: 70px; }
+	&--img3 { background-position: -5px -155px; width: 70px; height: 70px; }
+	&--img4 { background-position: -5px -230px; width: 70px; height: 70px; }
+}

@@ -1,0 +1,68 @@
+.form--column {
+	margin-right: 330px;
+}
+.ticket {
+	padding: 30px 30px 20px;
+	background: rgba(255, 198, 0, 0.11);
+	&__item {
+		position: relative;
+		margin-bottom: 20px;
+		border-bottom: 1px dashed #d1d1d1;
+		padding-bottom: 20px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -5px;
+			left: -30px;
+		    width: 9px;
+		    height: 29px;
+		    background-color: #a5a5a5;
+		}
+		&:nth-last-child(2) {border-bottom: none;margin-bottom: 0;}
+		&:last-child {margin-bottom: 0;}
+		&_bot {
+			position: relative;
+			padding-top: 20px;
+			padding-bottom: 0;
+			border-top: 2px dashed #a5a5a5;
+			border-bottom: none;
+			&:before {display: none;}
+		}
+	}
+	&__title {
+		font-size: 20px;
+		margin-bottom: 21px;
+		font-weight: 300;
+	}
+	&__subtitle {
+		position: relative;
+		font-weight: 400;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 1.4;
+		margin: 5px 0;
+		font-weight: 600;
+		&-item {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.icon {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&_min {
+			color: #666;
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+	&__row {
+		.ticket__subtitle {display: inline-block;}
+	}
+	&__price {
+		float: right;
+	}
+}

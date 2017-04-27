@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/material.css">
+
+</head>
+<body>
+	<div class="page  page--not-responsive">
+
+		<header class="header">
+			<a href="index.html" class="header__logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="header__content">
+				<div class="header-responsive-btn">
+					<span class="header-responsive-btn__text">Меню</span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+				</div>
+				<div class="header-responsive-menu">
+					<nav class="header-nav">
+						<ul>
+							<li class="header-nav__item">
+								<a href="order_checking.html" class="header-nav__link active">Заказы</a> 
+								<span class="header-nav__badge">1350</span>
+							</li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Маршруты и цены</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Данные поставщика</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Как этим пользоваться</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			
+			<div class="manage">
+				
+				<div class="manage-provider  manage-provider--big-height">
+
+					<div class="manage-provider__title">Смена пароля от личного кабинета</div>
+
+					<div class="form__table  form__table--fixed-width">
+						<div class="form__row">
+							<div class="form__col">
+								<div class="form__group">
+									<div class="form__field">
+										<input type="password" class="form__input  js-form-input" placeholder="Введите пароль">
+									</div>
+								</div>
+								<div class="form__msg">Введите новый пароль для доступа в личный кабинет</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__col">
+								<div class="form__group">
+									<div class="form__field">
+										<input type="password" class="form__input  js-form-input" placeholder="Введите пароль">
+									</div>
+								</div>
+								<div class="form__msg">Повторите новый пароль</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__col">
+								<button class="form__btn js-step2 mdl-js-button mdl-js-ripple-effect">
+									<span class="form__btn-text">Продолжить</span> <span class="form__btn-module"><i class="fa fa-chevron-right"></i></span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer class="footer  footer_responsive">
+			<div class="footer__content">
+				<div class="footer-top clearfix">
+					<div class="header__contact  header__contact--in-footer">
+						<div class="header__contact-number">8 <span>[</span>495<span>]</span> 777-23-77</div>
+						<div class="header__contact-text">клиентская поддержка</div>
+					</div>
+					<div class="switcher-сurrency switcher-сurrency_footer switcher-сurrency_position_right">
+						<div class="switcher-сurrency__field js-currency-popup">
+							<div class="switcher-сurrency__value">Рубль</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="switcher-popup">
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf1">
+								<label for="sf1" class="switcher-popup__item-dd-label js-currency">Доллар</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf2">
+								<label for="sf2" class="switcher-popup__item-dd-label js-currency">Евро</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf3">
+								<label for="sf3" class="switcher-popup__item-dd-label js-currency">Гривна</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf4">
+								<label for="sf4" class="switcher-popup__item-dd-label js-currency">Рубль</label>
+							</div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav__item  footer-nav__item_active"><a href="#" class="footer-nav__link">Заказы</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Маршруты и цены</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Данные поставщика</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Как этим пользоваться</a></div>
+					</div>
+				</div>
+				<div class="footer-board clearfix">
+					<div class="footer-board__logo"><img src="images/logo.png" alt=""></div>
+					<div class="footer-board__text">CarsRent — система подбора и заказа самого быстрого и удобного трансфера из аэропорта до отеля. Используя наш сервис вы точно найдете самое выгодное предложение, которое позволит вам сэкономить на такси до отеля. Оформите заказ за 24 часа до прилета и мы обязательно встретим и доставим вас куда вы укажите.</div>
+				</div>
+				<div class="footer-bot">
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">О проекте</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Обратная связь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Помощь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Пользовательское соглашение</a></div>
+					<div class="footer-bot__item">
+						<div class="footer-bot__company">CarsRent, 2012-2017. Все права защищены</div>
+					</div>
+					<div class="footer-bot__item footer-bot__item_logo">
+						<div class="footer-bot__logo">
+							<img src="images/tophotels.png" alt="" class="footer-bot__logo-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/vendor/material.min.js"></script>
+
+	</div>
+</body>
+</html>

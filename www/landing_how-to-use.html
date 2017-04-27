@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/material.css">
+
+</head>
+<body>
+	<div class="page">
+		
+		<header class="header">
+			<a href="index.html" class="header__logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="header__content">
+				<div class="header-responsive-btn">
+					<span class="header-responsive-btn__text">Меню</span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+					<span class="header-responsive-btn__bar"></span>
+				</div>
+				<div class="header-responsive-menu">
+					<div class="header-panel">
+						<div class="header-panel__item">
+							<div class="header-panel__icon  header-panel__icon_fav-active">
+								<div class="header-panel__counter">5</div>
+							</div>
+						</div>
+						<div class="header-panel__item  header-panel__item_currency">
+							<div class="header-panel__icon  header-panel__icon_rub">
+								
+							</div>
+							<div class="header-panel__popup">
+								<div class="header-panel__popup-item">евро</div>
+								<div class="header-panel__popup-item">доллар</div>
+								<div class="header-panel__popup-item  header-panel__popup-item_active">рубль</div>
+							</div>
+						</div>
+						<div class="header-panel__item  header-panel__item_user">
+							<div class="header-panel__icon header-panel__icon_power">
+								
+							</div>
+							<div class="header-panel__popup">
+								<div class="header-panel__popup-item">поездки</div>
+								<div class="header-panel__popup-item">бонусы</div>
+								<div class="header-panel__popup-item">избранное</div>
+								<div class="header-panel__popup-item">настройки</div>
+								<div class="header-panel__popup-item">выход</div>
+							</div>
+						</div>
+					</div>
+					<nav class="header-nav">
+						<ul>
+							<li class="header-nav__item"><a href="catalog.html" class="header-nav__link active">Трансфер</a></li>
+							<li class="header-nav__item"><a href="order_checking.html" class="header-nav__link">Проверить заказ</a></li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Справочник</a></li>
+							<li class="header-nav__item"><a href="landing_how-to-use.html" class="header-nav__link">Как это работает</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			<div class="content__table">
+				<div class="content__col  content__col_main">
+					<div class="landing-htu">
+						<div class="landing-htu__left"></div>
+						<div class="landing-htu__content">
+
+							<div class="landing-htu__title">Как воспользоваться услугой</div>
+
+							<div class="landing-htu__item">
+								<div class="landing-htu__subtitle">1. Укажите нужный маршрут трансфера</div>
+								<div class="landing-htu__text">В форме поиска выберите точки отправления и назначения: аэропорт, город, вокзал и др. Мы выполняем трансферы по всему миру, если вы не нашли вашей точки, отправьте запрос и мы рассчитаем для вас трансфер.</div>
+							</div>
+
+							<div class="landing-htu__item  landing-htu__item--second">
+								<div class="landing-htu__subtitle">2. Оформите заявку</div>
+								<div class="landing-htu__text">Укажите дату и время встречи, адрес или название отеля, дополнительные детали поездки. Оставьте свои контактные данные и внесите предоплату за бронирование. После этого ваша машина сразу будет забронирована.</div>
+							</div>
+
+							<div class="landing-htu__item">
+								<div class="landing-htu__subtitle">3. Водитель встретит вас на месте с табличкой</div>
+								<div class="landing-htu__text">В назначенное время и в указанном месте наш водитель встретит вас. У него будет табличка с вашим именем и вся необходимая информация о поездке. Он поможет погрузить багаж и с комфортом довезет вас до места назначения.</div>
+							</div>
+							
+							<a href="#" class="block-btn mdl-js-button mdl-js-ripple-effect">
+								<div class="block-btn__text">
+									<i class="material-icons">tag_faces</i>
+									Вуаля! Вы на месте!
+								</div>
+							</a>
+						</div>
+						<div class="landing-htu__right"></div>
+					</div>
+
+					<div class="form-search">
+						<div class="form-search__col  form-search__col--from">
+							<label for="from" class="form-search__label">Откуда вас забрать</label>
+							<div class="form__group  form__group--100">
+								<div class="form__field  js-modal-on">
+									<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+								</div>
+								<div class="form-modal  form-modal--time  js-modal">
+									<div class="form-modal__body">
+										<div class="form-modal__suggest  form-modal__suggest--airport">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Домодедово</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--hotel">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--address">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-search__col  form-search__col--separator">
+							<i class="material-icons">chevron_right</i>
+						</div>
+						<div class="form-search__col  form-search__col--to">
+							<label for="to" class="form-search__label">Куда доставить</label>
+							<div class="form__group  form__group--100">
+								<div class="form__field  js-modal-on">
+									<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+								</div>
+								<div class="form-modal  form-modal--time  js-modal">
+									<div class="form-modal__body">
+										<div class="form-modal__suggest  form-modal__suggest--airport">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Домодедово</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--hotel">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--address">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-search__col  form-search__col--btn">
+							<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+								<span class="block-btn__text">Найти автомобиль</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<div style="height: 40px;"></div>
+
+		<footer class="footer  footer_responsive">
+			<div class="footer__content">
+				<div class="footer-top clearfix">
+					<div class="header__contact  header__contact--in-footer">
+						<div class="header__contact-number">8 <span>[</span>495<span>]</span> 777-23-77</div>
+						<div class="header__contact-text">клиентская поддержка</div>
+					</div>
+					<div class="switcher-сurrency switcher-сurrency_footer switcher-сurrency_position_right">
+						<div class="switcher-сurrency__field js-currency-popup">
+							<div class="switcher-сurrency__value">Рубль</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="switcher-popup">
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf1">
+								<label for="sf1" class="switcher-popup__item-dd-label js-currency">Доллар</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf2">
+								<label for="sf2" class="switcher-popup__item-dd-label js-currency">Евро</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf3">
+								<label for="sf3" class="switcher-popup__item-dd-label js-currency">Гривна</label>
+							</div>
+							<div class="switcher-popup__item">
+								<input type="radio" class="switcher-popup__item-dd-radio" name="ff" id="sf4">
+								<label for="sf4" class="switcher-popup__item-dd-label js-currency">Рубль</label>
+							</div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav__item  footer-nav__item_active"><a href="#" class="footer-nav__link">Трансфер</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Проверить заказ</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Как это работает</a></div>
+						<div class="footer-nav__item"><a href="#" class="footer-nav__link">Вопросы и ответы</a></div>
+					</div>
+				</div>
+				<div class="footer-board clearfix">
+					<div class="footer-board__logo"><img src="images/logo.png" alt=""></div>
+					<div class="footer-board__text">CarsRent — система подбора и заказа самого быстрого и удобного трансфера из аэропорта до отеля. Используя наш сервис вы точно найдете самое выгодное предложение, которое позволит вам сэкономить на такси до отеля. Оформите заказ за 24 часа до прилета и мы обязательно встретим и доставим вас куда вы укажите.</div>
+				</div>
+				<div class="footer-bot">
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">О проекте</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Обратная связь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Помощь</a></div>
+					<div class="footer-bot__item footer-bot__item_link"><a href="#" class="footer-bot__link">Пользовательское соглашение</a></div>
+					<div class="footer-bot__item">
+						<div class="footer-bot__company">CarsRent, 2012-2017. Все права защищены</div>
+					</div>
+					<div class="footer-bot__item footer-bot__item_logo">
+						<div class="footer-bot__logo">
+							<img src="images/tophotels.png" alt="" class="footer-bot__logo-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div id="overlay" class="overlay  overlay--dark"></div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/vendor/material.min.js"></script>
+
+	</div>
+</body>
+</html>

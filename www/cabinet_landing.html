@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Carsrent</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/material.css">
+
+</head>
+<body>
+	<div class="page  page--gray  page--not-responsive">
+		
+		<div class="header-container  js-header-container">
+
+			<header class="header">
+				<div class="header__content">
+					<a href="index.html" class="header__logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="header-responsive-btn">
+			            <span class="header-responsive-btn__text">Меню</span>
+			            <span class="header-responsive-btn__bar"></span>
+			            <span class="header-responsive-btn__bar"></span>
+			            <span class="header-responsive-btn__bar"></span>
+					</div>
+					<div class="header-responsive-menu">
+						<div class="header-panel">
+							<a href="cabinet_route.html" class="block-btn  block-btn--landing  mdl-js-button  mdl-js-ripple-effect">
+								<span class="block-btn__text">В личный кабинет</span>
+							</a>
+						</div>
+						<nav class="header-nav  header-nav--landing">
+							<ul>
+								<li class="header-nav__item"><a href="#orders" class="header-nav__link  js-landing-anchor-link">Заказы</a></li>
+								<li class="header-nav__item"><a href="#route" class="header-nav__link  js-landing-anchor-link">Маршруты</a></li>
+								<li class="header-nav__item"><a href="#editor" class="header-nav__link  js-landing-anchor-link">Редактор <br> маршрутов</a></li>
+								<li class="header-nav__item"><a href="#provider" class="header-nav__link  js-landing-anchor-link">Данные <br> поставщика</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		
+			<div class="content">
+				
+				<div class="landing-head">
+					<div class="landing-head__title">Добро пожаловать</div>
+					<div class="landing-head__desc">в личный кабинет поставщика CarsRent</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="landing-section  landing-section--white">
+			<div class="content">
+				<div class="landing-section__text">Данный интерфейс даёт вам полные возможности по управлению вашими данными, заказами и маршрутами</div>
+			</div>
+		</div>
+		<main class="content">
+
+			<div class="landing-section" id="orders">
+				<div class="landing-section__title">Заказы</div>
+				<div class="landing-section__text">Принимайте новые заказы, просматривайте историю заказов</div>
+				<div class="landing-section__screen"><img src="images/landing/slide1.png" alt=""></div>
+				<div class="landing-section__text">
+					<p>Здесь выводятся все ваши заказы</p>
+					<p><span class="landing-section__text--white">Белые</span> — новые и подтвержденные заказы</p>
+					<p><span class="landing-section__text--green">Зеленые</span> — выполненные заказы</p>
+					<p><span class="landing-section__text--red">Красные</span> — отмененные или невыполненные заказы</p>
+					<p>По клику на заказ открываются подробности</p>
+				</div>
+				<div class="landing-section__screen"><img src="images/landing/slide2.png" alt=""></div>
+				<div class="landing-section__text">
+					<p>Для новых заказов доступны функции «Принять» и «Отказаться»</p>
+					<p>Для старых заказов — «Удалить»</p>
+				</div>
+			</div>
+			<div class="landing-section" id="route">
+				<div class="landing-section__title">Маршруты</div>
+				<div class="landing-section__text">Добавляйте новые маршруты и редактируйте уже существующие в удобном и простом интерфейсе</div>
+				<div class="landing-section__screen"><img src="images/landing/slide3.png" alt=""></div>
+				<div class="landing-section__text">
+					<p>Здесь выводятся все указанные вами маршруты</p>
+					<p>Чтобы добавить новый маршрут, нажмите на «Добавить маршрут»</p>
+				</div>
+			</div>
+			<div class="landing-section" id="editor">
+				<div class="landing-section__title">Редактор маршрутов</div>
+				<div class="landing-section__text">Создавайте и редактируйте свои марщруты</div>
+				<div class="landing-section__screen"><img src="images/landing/slide4.png" alt=""></div>
+				<div class="landing-section__text">
+					<p>В редакторе маршрутов вы можете менять и редактировать уже существующие маршруты, а так же создавать новые.</p>
+					<p>Количество маршрутов не ограничено!</p>
+				</div>
+			</div>
+			<div class="landing-section" id="provider">
+				<div class="landing-section__title">Данные поставщика</div>
+				<div class="landing-section__text">Обновляйте, изменяйте и добавляйте ваши контактные данные, выбирайте приоритетный способ связи</div>
+				<div class="landing-section__screen"><img src="images/landing/slide5.png" alt=""></div>
+				<div class="landing-section__text">
+					<p>Здесь выводится вся информация о вас.</p>
+					<p>Вы можете добавлять новые способы связи, редактировать текущие, выбирать "сердечком" приоритетный способ связи.</p>
+				</div>
+				
+			</div>
+			
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/vendor/material.min.js"></script>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carsrent</title>
+
+	//= template/styles.html
+
+</head>
+<body>
+	<div class="page">
+		
+		//= template/header.html
+
+		<main class="content">
+			<div class="content__table">
+				<div class="content__col  content__col_main">
+					<div class="form-search">
+						<div class="form-search__col  form-search__col--from">
+							<label for="from" class="form-search__label">Откуда вас забрать</label>
+							<div class="form__group  form__group--100">
+								<div class="form__field  js-modal-on">
+									<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+								</div>
+								<div class="form-modal  form-modal--time  js-modal">
+									<div class="form-modal__body">
+										<div class="form-modal__suggest  form-modal__suggest--airport">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Домодедово</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--hotel">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--address">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-search__col  form-search__col--separator">
+							<i class="material-icons">chevron_right</i>
+						</div>
+						<div class="form-search__col  form-search__col--to">
+							<label for="to" class="form-search__label">Куда доставить</label>
+							<div class="form__group  form__group--100">
+								<div class="form__field  js-modal-on">
+									<input id="from" type="text" class="form__input  js-form-input  js-form-suggest-val" placeholder="Аэропорт, отель, место или адрес">
+								</div>
+								<div class="form-modal  form-modal--time  js-modal">
+									<div class="form-modal__body">
+										<div class="form-modal__suggest  form-modal__suggest--airport">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Домодедово</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">DME</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--hotel">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">Villa Del Pino B&B</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Италия</div>
+											</div>
+										</div>
+										<div class="form-modal__suggest  form-modal__suggest--address">
+											<div class="form-modal__suggest-item js-form-suggest">
+												<div class="form-modal__suggest-text">ул. Думская 11/2</div>
+												<div class="form-modal__suggest-text  form-modal__suggest-text--spec">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-search__col  form-search__col--btn">
+							<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+								<span class="block-btn__text">Найти автомобиль</span>
+							</span>
+						</div>
+					</div>
+					<div class="direction-block">
+						<a href="#" class="direction-block__link  direction-block__link--fav  js-popup-on">
+							<i class="material-icons">grade</i>
+							<span>Запомнить страницу</span>
+						</a>
+						<div class="direction-block__way">Ларнака Аэропорт → Айя-Напа</div>
+						<div class="direction-block__info">
+							<div class="direction-block__info-item">
+								<div class="direction-block__time">В пути: ~45мин</div>
+							</div>
+							<div class="direction-block__info-item">
+								<a href="#" class="direction-block__link">Показать обратный</a>
+							</div>
+							<div class="direction-block__info-item">
+								<a href="javascript:void(0)" class="direction-block__link  js-modal-on">Условия перевозки</a>
+								<div class="direction-block__popup  dialog-modal  js-modal">
+									<h2 class="direction-block__popup-title">Трансфер до отеля</h2>
+									<p class="direction-block__popup-text">Трансфер включает поездку до любого отеля или адреса в пределах города. Точный адрес или название отеля вы указываете при оформлении заказа.</p>						
+									<h2 class="direction-block__popup-title">Пассажиры и багаж</h2>
+									<p class="direction-block__popup-text">У каждого класса авто указано максимальное кол-во пассажиров и багажа, которое он вмещает. Дети считаются пассажирами, детские кресла заказываются и оплачиваются отдельно.</p>
+									<h2 class="direction-block__popup-title">Стоимость трансфера</h2>
+									<p class="direction-block__popup-text">Цена указана за машину определенного класса, она не зависит от кол-ва пассажиров, даты поездки и адреса в пределах города.</p>
+									<h2 class="direction-block__popup-title">Заказ трансфера</h2>
+									<p class="direction-block__popup-text">Для бронирования такси вы указываете точные место, дату и время встречи, контактные данные и вносите предоплату. После этого машина уже будет забронирована и вас будет встречать водитель.</p>
+									<h2 class="direction-block__popup-title">Встреча с водителем</h2>
+									<p class="direction-block__popup-text">Водитель встретит вас в назначенное время в указанном месте. У него будет табличка с вашим именем. При необходимости водитель позвонит вам или отправит sms, у вас также будет телефон диспетчера такси.</p>
+									<h2 class="direction-block__popup-title">Оплата заказа</h2>
+									<p class="direction-block__popup-text">Часть стоимости вы вносите в качестве предоплаты за бронирование. Оставшуюся часть вы оплачиваете водителю наличными по приезду на место назначения.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog">
+						<a href="order_form2.html" class="catalog-card">
+							<div class="catalog-card__col  catalog-card__col--car">
+								<div class="catalog-card__car"><img src="images/auto/cars-01.png" alt=""></div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--details">
+								<div class="catalog-card__title">Эконом-класс Mini</div>
+								<div class="catalog-card__text catalog-card__text--gray">VW Golf, Ford Focus, Opel Astra, Audi A3, BMW 3</div>
+								<div class="catalog-card__text">Экономичный вариант для небольшой компании до 3-4 человек.</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__info-item"><i class="material-icons">person</i> 4 пассажира</div>
+									<div class="catalog-card__info-item"><i class="material-icons">work</i> 3 багажных места</div>
+								</div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--price">
+								<div class="catalog-card__price">3200 P — (44 <i class="fa fa-euro"></i>)</div>
+								<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+									<span class="block-btn__text">Заказать трансфер</span>
+								</span>
+								<div class="catalog-card__text  catalog-card__text--small  catalog-card__text--gray">*300 Р оплатить сейчас, остальная сумма оплачивается на месте</div>
+							</div>
+						</a>
+						<a href="order_form2.html" class="catalog-card">
+							<div class="catalog-card__col  catalog-card__col--car">
+								<div class="catalog-card__car"><img src="images/auto/cars-04.png" alt=""></div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--details">
+								<div class="catalog-card__title">Эконом-класс Mini <span class="catalog-card__text  catalog-card__text--discount">Скидка</span></div>
+								<div class="catalog-card__text catalog-card__text--gray">VW Golf, Ford Focus, Opel Astra, Audi A3, BMW 3</div>
+								<div class="catalog-card__text">Экономичный вариант для небольшой компании до 3-4 человек.</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__info-item"><i class="material-icons">person</i> 4 пассажира</div>
+									<div class="catalog-card__info-item"><i class="material-icons">work</i> 3 багажных места</div>
+								</div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--price">
+								<div class="catalog-card__price  catalog-card__price--discount">60 <i class="fa fa-euro"></i> (5000 P)</div>
+								<div class="catalog-card__price">3200 P — (44 <i class="fa fa-euro"></i>)</div>
+								<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+									<span class="block-btn__text">Заказать трансфер</span>
+								</span>
+								<div class="catalog-card__text  catalog-card__text--small  catalog-card__text--gray">*300 Р оплатить сейчас, остальная сумма оплачивается на месте</div>
+							</div>
+						</a>
+						<a href="order_form2.html" class="catalog-card">
+							<div class="catalog-card__col  catalog-card__col--car">
+								<div class="catalog-card__car"><img src="images/auto/cars-03.png" alt=""></div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--details">
+								<div class="catalog-card__title">Эконом-класс Mini <span class="catalog-card__text  catalog-card__text--discount">Скидка</span></div>
+								<div class="catalog-card__text catalog-card__text--gray">VW Golf, Ford Focus, Opel Astra, Audi A3, BMW 3</div>
+								<div class="catalog-card__text">Экономичный вариант для небольшой компании до 3-4 человек.</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__info-item"><i class="material-icons">person</i> 4 пассажира</div>
+									<div class="catalog-card__info-item"><i class="material-icons">work</i> 3 багажных места</div>
+								</div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--price">
+								<div class="catalog-card__price  catalog-card__price--discount">60 <i class="fa fa-euro"></i> (5000 P)</div>
+								<div class="catalog-card__price">3200 P — (44 <i class="fa fa-euro"></i>)</div>
+								<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+									<span class="block-btn__text">Заказать трансфер</span>
+								</span>
+								<div class="catalog-card__text  catalog-card__text--small  catalog-card__text--gray">*300 Р оплатить сейчас, остальная сумма оплачивается на месте</div>
+							</div>
+						</a>
+						<a href="order_form2.html" class="catalog-card">
+							<div class="catalog-card__col  catalog-card__col--car">
+								<div class="catalog-card__car"><img src="images/auto/cars-02.png" alt=""></div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--details">
+								<div class="catalog-card__title">Эконом-класс Mini <span class="catalog-card__text  catalog-card__text--discount">Скидка</span></div>
+								<div class="catalog-card__text catalog-card__text--gray">VW Golf, Ford Focus, Opel Astra, Audi A3, BMW 3</div>
+								<div class="catalog-card__text">Экономичный вариант для небольшой компании до 3-4 человек.</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__info-item"><i class="material-icons">person</i> 4 пассажира</div>
+									<div class="catalog-card__info-item"><i class="material-icons">work</i> 3 багажных места</div>
+								</div>
+							</div>
+							<div class="catalog-card__col  catalog-card__col--price">
+								<div class="catalog-card__price  catalog-card__price--discount">60 <i class="fa fa-euro"></i> (5000 P)</div>
+								<div class="catalog-card__price">3200 P — (44 <i class="fa fa-euro"></i>)</div>
+								<span class="block-btn mdl-js-button mdl-js-ripple-effect">
+									<span class="block-btn__text">Заказать трансфер</span>
+								</span>
+								<div class="catalog-card__text  catalog-card__text--small  catalog-card__text--gray">*300 Р оплатить сейчас, остальная сумма оплачивается на месте</div>
+							</div>
+						</a>
+						<span class="more-btn  more-btn--animate" onclick="$(this).toggleClass('active');">Загрузить ещё</span>
+					</div>
+					<div class="catalog-cap">
+						<div class="catalog-cap__icon"><i class="material-icons">close</i></div>
+						<div class="catalog-cap__text">
+							К сожалению, <br>
+							у нас нет предложений по данному направлению
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<div style="height: 40px;"></div>
+
+		<div class="information">
+			<div class="content">
+				<div class="information__text">
+					<h1>Как добраться из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага (Prague Airport - Masaryk train station Prague)</h1>
+					<p>Забронировать трансфер на такси Рузине Аэропорт Прага - Масариково Железнодорожный Вокзал Прага по заранее известной цене вам удастся на сайте CarsRent.ru. Действующая цена онлайн, а также понятное время в пути, и все страны открыты для вас.</p>
+					<p>Зачем выбирать трансфер, а не стандартное такси по приезду? Обычно, индивидуальный трансфер оказывается дешевле, потому что цена в месте скопления туристов зачастую высокая, а также наш водитель вас ждет у выхода с посадки, вы никого не ищете, не томитесь в очереди, не прикидываете, как разъяснить водителю, куда вы следуете и возьмут ли с вас деньги за ваш багаж, кресло для ребенка и т.д. То есть, вы просто заблаговременно все знаете о вашем трансфере в Рузине Аэропорт Прага и все контролируете, любуясь необычными местами и людьми.</p>
+					<p>Доехать из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага в Чехии с удобством вам позволит предзаказ такси. Посмотреть стоимость и забронировать такси из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага по невысокой цене вы быстро сможете на сайте CarsRent.</p>
+					<h2>Способы трансфера Аэропорт Прага - Масариково Железнодорожный Вокзал Прага Железнодорожный Вокзал Прага</h2>
+					<p>Если вы впервые едете по маршруту из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага Железнодорожный Вокзал Прага, вам обязательно нужно подумать о подходящем для вас транспорте. Доехать из Аэропорта Прага до Масариково Железнодорожный Вокзал Прага можно следующими способами:</p>
+					<h2>Сесть на рейсовый шаттл Аэропорт Прага - Масариково вокзал Прага</h2>
+					<p>Между курортами и между городами, как правило, ездят рейсовые автобусы. Автобус заслуженно считается наиболее бюджетным трансфером. Недостаток в том, что автобус везет только до города, до вокзала или ветки метро.</p>
+					<h2>Ловить машину при отправлении в Аэропорту Прага</h2>
+					<p>Службы такси есть повсюду, и найти его на месте, как правило, не вызовет сложностей. Проблема может возникнуть в том, что такси вас специально не встречает, поэтому вы рискуете потерять время.</p>
+					<h2>Заказать трансфер заблаговременно</h2>
+					<p>Все намного проще, если забронировать машину перед поездкой. Шофер будет специально встречать вас на машине подходящего типа. Он уже будет знать, сколько едет детей и пассажиров и куда вас нужно отвезти. Все наиболее удобно, без лишних разговоров, и цену вы будете знать заранее.</p>
+					<h2>Заказ такси из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага Железнодорожный Вокзал Прага</h2>
+					<p>На сайте CarsRent вы можете изучить условия, выбрать и забронировать необходимый транспорт из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага Железнодорожный Вокзал Прага. Для проезда из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага мы предалагаем 8 типов автомашин: от класса Economy до класса Minibus 19pax. Дистанция от Аэропорта Прага до Масариково Железнодорожный Вокзал Прага в Чехии соответствует 17 км., длительность поездки составит 25мин.</p>
+					<p>Чтобы зарезервировать трансфер из Аэропорта Прага в Масариково Железнодорожный Вокзал Прага в Чехии, нажмите "Заказать", введите указанные параметры поездки, оставьте контакты и оставьте предоплату. В назначенное время в Аэропорту Прага вас встретит такси.</p>
+					<p>Ждем вас в Кипре.</p>
+				</div>
+			</div>
+		</div>
+
+		//= template/footer.html
+		
+		<div class="popup  popup-save-page  js-popup">
+			<div class="popup-save-page__head"></div>
+			<div class="popup-save-page__body">
+				<div class="popup-save-page__title">Запомнить страницу?</div>
+				<div class="popup-save-page__text">Сохраните эту страницу, чтобы потом не искать трансфер снова. <br>Мы отправим вам ссылку на указанный электронный адрес.</div>
+				<div class="popup-save-page__icon"></div>
+				<div class="form__field">
+					<input id="from" type="text" class="form__input  js-form-input" placeholder="Введите действующий e-mail">
+				</div>
+				<div class="popup-save-page__row">
+					<button class="popup-save-page__btn  js-popup-close">Нет, закрыть это окно</button>
+					<input type="submit" class="popup-save-page__btn  popup-save-page__btn--colored" value="Да, сохранить эту страницу">
+				</div>
+			</div>
+		</div>
+
+		<div id="overlay" class="overlay  overlay--dark"></div>
+
+		//= template/scripts.html
+
+	</div>
+</body>
+</html>
